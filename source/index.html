@@ -4,27 +4,28 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SUPERGYM</title>
+    <title>Internship</title>
     <link rel="stylesheet" href="sass/style.scss">
   </head>
 
   <body class="page-body">
-    <!-- пример использования спрайта -->
-    <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
-    <svg>
-      <use href="/__spritemap#sprite-user"></use>
-    </svg>
-    <!-- примеры требуемых атрибутов data-test="*" -->
-    <div data-test="hero">hero</div>
-    <div data-test="about">about</div>
-    <div data-test="programs">programs</div>
-    <div data-test="grant">grant</div>
-    <div data-test="news">news</div>
-    <div data-test="FAQ">FAQ</div>
-    <div data-test="reviews">reviews</div>
-    <div data-test="contacts">contacts</div>
-    <div data-test="form">form</div>
-    <div data-test="footer">footer</div>
+    <header class="header">
+      <div class="container">
+        <div class="header__background-wrapper">
+          <div class="header__flex-wrapper">
+            <img class="header__logo" src="/__spritemap#sprite-header-logo" alt="Логотип" width="52" height="52">
+            <button class="header__burger-menu">
+              <span class="header__burger-menu-text">Меню</span>
+              <svg class="header__burger-menu-icon" aria-label="" width="46" height="46">
+                <use href="/__spritemap#sprite-burger-button"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main"></main>
+    <footer class="footer"></footer>
     <script type="module" src="js/main.js"></script>
   </body>
 

@@ -52,3 +52,24 @@ npm run test
 - `npm run lint-js`: проверяет скрипты по правилам eslint;
 - `npm run ls-lint`: проверяет именование файлов и папок;
 - `npm run editorconfig`: проверяет editorconfig.
+
+  
+Пример использования спрайта
+
+    <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
+    <svg>
+      <use href="/__spritemap#sprite-user"></use>
+    </svg>
+
+примеры требуемых атрибутов data-test="*"
+
+    <div data-test="hero">hero</div>
+    <div data-test="about">about</div>
+    <div data-test="programs">programs</div>
+    <div data-test="grant">grant</div>
+    <div data-test="news">news</div>
+    <div data-test="FAQ">FAQ</div>
+    <div data-test="reviews">reviews</div>
+    <div data-test="contacts">contacts</div>
+    <div data-test="form">form</div>
+    <div data-test="footer">footer</div>
