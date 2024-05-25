@@ -1,0 +1,127 @@
+.hero__background-wrapper {
+  background-image: url("../../img/mobile/header-hero-background-1x.webp");
+  @media (resolution >= 2dppx) {
+    background-image: url("../../img/mobile/header-hero-background-2x.webp");
+  }
+  background-size: 320px 568px;
+  padding-bottom: 20px;
+}
+
+.hero__header {
+  display: flex;
+  padding-top: 20px;
+  padding-left: 15px;
+  padding-bottom: 127px;
+}
+
+.hero__header-logo {
+  margin-right: 102px;
+  margin-top: 1px;
+}
+
+.hero__header-burger-menu {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  background-color: #fff;
+  border: 1px solid #316dc2;
+  border-radius: 30px;
+  width: 136px;
+  height: 54px;
+}
+
+.hero__header-burger-menu-text {
+  color: #316dc2;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.28px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.hero__pagination {
+  margin-left: 15px;
+}
+
+.hero__pagination-list {
+  display: flex;
+  margin: 0;
+  list-style-type: none;
+  padding: 10px 0 10px 16px;
+  background-image: url("../../img/mobile/pagination-background-1x.webp");
+  @media (resolution >= 2dppx) {
+    background-image: url("../../img/mobile/pagination-background-2x.webp");
+  }
+  background-repeat: no-repeat;
+}
+
+.hero__pagination-item {
+  width: 4px;
+  height: 4px;
+  border: 2px solid #275699;
+  border-radius: 50%;
+  margin-right: 12px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.hero__pagination-item--active {
+  background-color: #275699;
+}
+
+.hero__slider {
+  margin-left: 15px;
+}
+
+.hero__slider-item {
+  background-image: url("../../img/mobile/hero-slide-background-1x.webp");
+  @media (resolution >= 2dppx) {
+    background-image: url("../../img/mobile/hero-slide-background-2x.webp");
+  }
+  background-repeat: no-repeat;
+  padding-left: 14px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.hero__slider-item-header {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #316dc2;
+  margin: 0 0 16px;
+  width: 180px;
+}
+
+.hero__slider-item-text {
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0 0 25px;
+  width: 240px;
+}
+
+.hero__slider-more-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  width: 152px;
+  height: 42px;
+  border: 1px solid #316dc2;
+  border-radius: 30px;
+  margin-left: 1px;
+}
+
+.hero__slider-more-link-text {
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.024em;
+  text-transform: uppercase;
+  color: #316dc2;
+  margin-left: 20px;
+  margin-top: 1px;
+  margin-right: 20px;
+}
