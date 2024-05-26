@@ -1,0 +1,99 @@
+.about__header {
+  font-size: 20px;
+  font-weight: 400;
+  color: #316dc2;
+  margin: 49px 0 13px 16px;
+}
+
+.about__header-part p {
+  font-size: 16px;
+  line-height: 22px;
+  margin: 0 0 41px 15px;
+}
+
+.about__goal-part h3 {
+  font-size: 18px;
+  font-weight: 400;
+  color: #316dc2;
+  margin: 0 0 20px 15px;
+}
+
+.about__goal-part p {
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0 0 30px 15px;
+  width: 290px;
+}
+
+.about__more-info-link {
+  width: 221px;
+  height: 42px;
+  margin-left: 15px;
+  margin-bottom: 40px;
+}
+
+.about__more-info-link-text {
+  margin-left: 20px;
+  margin-top: 2px;
+  margin-right: 19px;
+}
+
+.about__advantages {
+  background-color: #316dc2;
+  border-radius: 20px;
+  width: 290px;
+  margin-left: 15px;
+  padding-top: 42px;
+  padding-bottom: 40px;
+}
+
+.about__advantages-item {
+  position: relative;
+  border: 1px solid #f0efe9;
+  border-radius: 16px;
+  width: 248px;
+  margin-left: 20px;
+  margin-bottom: 22px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.about__advantages-item h3 {
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.016em;
+  text-transform: uppercase;
+  color: #fff;
+  margin: 16px 0 16px 19px;
+}
+
+.about__advantages-item p {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20px;
+  color: #f0efe9;
+  margin: 0 0 15px 20px;
+  width: 198px;
+}
+
+.about__advantages-item:last-child h3 {
+  line-height: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.about__advantages-item:last-child p {
+  width: 280px;
+}
+
+.about__advantages-item:nth-child(3) h3 {
+  margin-bottom: 15px;
+}
+
+.about__advantages-item-icon {
+  position: absolute;
+  left: -21px;
+  top: -23px;
+}

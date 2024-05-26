@@ -88,6 +88,13 @@
   padding-bottom: 10px;
 }
 
+.hero__slider-item p {
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0 0 25px;
+  width: 240px;
+}
+
 .hero__slider-item-header {
   font-size: 22px;
   font-weight: 400;
@@ -97,30 +104,13 @@
   width: 180px;
 }
 
-.hero__slider-item-text {
-  font-size: 14px;
-  line-height: 20px;
-  margin: 0 0 25px;
-  width: 240px;
-}
-
 .hero__slider-more-link {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
   width: 152px;
   height: 42px;
-  border: 1px solid #316dc2;
-  border-radius: 30px;
   margin-left: 1px;
 }
 
 .hero__slider-more-link-text {
-  font-size: 12px;
-  font-weight: 500;
-  letter-spacing: 0.024em;
-  text-transform: uppercase;
-  color: #316dc2;
   margin-left: 20px;
   margin-top: 1px;
   margin-right: 20px;
