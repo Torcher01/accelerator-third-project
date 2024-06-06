@@ -42,6 +42,8 @@
 }
 
 .hero__pagination {
+  position: relative;
+  display: flex;
   margin-left: 15px;
 }
 
@@ -49,12 +51,16 @@
   display: flex;
   margin: 0;
   list-style-type: none;
-  padding: 10px 0 10px 16px;
-  background-image: url("../../img/mobile/pagination-background-1x.webp");
-  @media (resolution >= 2dppx) {
-    background-image: url("../../img/mobile/pagination-background-2x.webp");
-  }
-  background-repeat: no-repeat;
+  padding: 10px 16px;
+  background-color: #fff;
+  border-radius: 12px 12px 0 0;
+}
+
+.hero__pagination-angle {
+  position: absolute;
+  left: 80px;
+  bottom: 0;
+  fill: #fff;
 }
 
 .hero__pagination-item {
@@ -74,25 +80,27 @@
 }
 
 .hero__slider {
+  position: relative;
   margin-left: 15px;
-}
-
-.hero__slider-item {
-  background-image: url("../../img/mobile/hero-slide-background-1x.webp");
-  @media (resolution >= 2dppx) {
-    background-image: url("../../img/mobile/hero-slide-background-2x.webp");
-  }
-  background-repeat: no-repeat;
-  padding-left: 14px;
-  padding-top: 20px;
-  padding-bottom: 10px;
 }
 
 .hero__slider-item p {
   font-size: 14px;
   line-height: 20px;
-  margin: 0 0 25px;
+  margin: 0;
+  padding-left: 14px;
+  padding-right: 13px;
+  padding-bottom: 15px;
   width: 240px;
+  background-color: #fff;
+  border-radius: 0 0 14px 0;
+}
+
+.hero__slider-angle {
+  position: absolute;
+  right: 28px;
+  top: 140px;
+  fill: #fff;
 }
 
 .hero__slider-item-header {
@@ -100,8 +108,19 @@
   font-weight: 400;
   line-height: 26px;
   color: #316dc2;
-  margin: 0 0 16px;
+  margin: 0;
+  padding: 20px 96px 16px 14px;
   width: 180px;
+  background-color: #fff;
+  border-radius: 0 16px 16px 0;
+}
+
+.hero__slider-more-link-background-wrapper {
+  position: relative;
+  display: inline-block;
+  background-color: #fff;
+  border-radius: 0 0 14px 14px;
+  padding: 10px 15px 10px 14px;
 }
 
 .hero__slider-more-link {
@@ -114,4 +133,11 @@
   margin-left: 20px;
   margin-top: 1px;
   margin-right: 20px;
+}
+
+.hero__slider-more-link-angle {
+  position: absolute;
+  right: -10px;
+  top: 0;
+  fill: #fff;
 }

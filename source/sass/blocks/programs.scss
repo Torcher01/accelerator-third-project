@@ -1,0 +1,111 @@
+.programs__header-flex-wrapper {
+  display: flex;
+  margin-left: 15px;
+  margin-bottom: 33px;
+}
+
+.programs__header {
+  font-size: 20px;
+  font-weight: 400;
+  color: #316dc2;
+  margin: 0 133px 0 0;
+}
+
+.programs__slider-buttons {
+  display: flex;
+}
+
+.programs__slider-button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.programs__slider-button--left {
+  margin-right: 20px;
+}
+
+.programs__slider-button-icon {
+  display: block;
+  stroke: #316dc2;
+  margin-top: -1px;
+}
+
+.programs__slider-button-icon--right {
+  transform: rotate(180deg);
+}
+
+.programs__slider-button--disabled svg {
+  stroke: #a9afb7;
+}
+
+.programs__slide {
+  position: relative;
+  background-image: url("../../img/mobile/programs-slide-1-background-1x.webp");
+  @media (resolution >= 2dppx) {
+    background-image: url("../../img/mobile/programs-slide-1-background-2x.webp");
+  }
+  background-repeat: no-repeat;
+  margin-left: 15px;
+  border-radius: 12px;
+  padding-top: 271px;
+}
+
+.programs__slide-header {
+  display: inline-block;
+  background-color: #fff;
+  border-radius: 12px 12px 0 0;
+  font-size: 16px;
+  font-weight: 400;
+  color: #316dc2;
+  margin: 0 0 0 10px;
+  padding: 18px 35px 6px 18px;
+}
+
+.programs__slide-angle {
+  position: absolute;
+  right: 131px;
+  bottom: 161px;
+  fill: #fff;
+}
+
+.programs__slide-flex-wrapper {
+  display: flex;
+}
+
+.programs__slide-flex-wrapper p {
+  font-size: 12px;
+  line-height: 14px;
+  margin: 0;
+  padding-top: 13px;
+  padding-left: 18px;
+  padding-bottom: 14px;
+  width: 175px;
+}
+
+.programs__slide-text-background-wrapper {
+  display: inline-block;
+  background-color: #fff;
+  border-radius: 0 12px 12px 12px;
+  margin-left: 10px;
+  margin-bottom: 48px;
+}
+
+.programs__more-info-link {
+  width: 203px;
+  height: 42px;
+  margin-bottom: 50px;
+}
+
+.programs__more-info-link-text {
+  margin-left: 30px;
+  margin-top: 1px;
+  margin-right: 30px;
+}
+
+.programs__slide-link-icon {
+  margin-top: 18px;
+  margin-left: 29px;
+  margin-right: 18px;
+}
