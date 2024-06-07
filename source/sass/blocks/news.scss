@@ -42,17 +42,21 @@
 
 .news__item--interview {
   background-image: url("../../img/mobile/news-interview-background-1x.webp");
+
   @media (resolution >= 2dppx) {
     background-image: url("../../img/mobile/news-interview-background-2x.webp");
   }
+
   padding-top: 186px;
 }
 
 .news__item--travel {
   background-image: url("../../img/mobile/news-travel-background-1x.webp");
+
   @media (resolution >= 2dppx) {
     background-image: url("../../img/mobile/news-travel-background-2x.webp");
   }
+
   padding-top: 126px;
 }
 
@@ -127,7 +131,7 @@
   font-size: 12px;
   line-height: 14px;
   background-color: #f0efe9;
-  border-radius: 0 12px 0 12px;
+  border-radius: 0 12px;
   width: 263px;
   margin: 0;
   padding-top: 13px;
@@ -224,5 +228,5 @@
 
 
 .news__pagination-item-link--active {
-  color: #fff;
+  color: #ffffff;
 }

@@ -43,9 +43,11 @@
 .programs__slide {
   position: relative;
   background-image: url("../../img/mobile/programs-slide-1-background-1x.webp");
+
   @media (resolution >= 2dppx) {
     background-image: url("../../img/mobile/programs-slide-1-background-2x.webp");
   }
+
   background-repeat: no-repeat;
   margin-left: 15px;
   border-radius: 12px;
@@ -54,7 +56,7 @@
 
 .programs__slide-header {
   display: inline-block;
-  background-color: #fff;
+  background-color: #ffffff;
   border-radius: 12px 12px 0 0;
   font-size: 16px;
   font-weight: 400;
@@ -67,7 +69,7 @@
   position: absolute;
   right: 131px;
   bottom: 161px;
-  fill: #fff;
+  fill: #ffffff;
 }
 
 .programs__slide-flex-wrapper {
@@ -86,8 +88,8 @@
 
 .programs__slide-text-background-wrapper {
   display: inline-block;
-  background-color: #fff;
-  border-radius: 0 12px 12px 12px;
+  background-color: #ffffff;
+  border-radius: 0 12px 12px;
   margin-left: 10px;
   margin-bottom: 48px;
 }

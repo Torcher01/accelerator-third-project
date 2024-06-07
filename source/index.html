@@ -10,7 +10,7 @@
 
 <body class="page-body">
 <header>
-  <h1 class="visually-hidden"></h1>
+  <h1 class="visually-hidden">Проект "Стажировка"</h1>
 </header>
 <main class="main">
   <section class="hero" data-test="hero">
@@ -19,15 +19,15 @@
       <div class="hero__background-wrapper">
         <div class="hero__header">
           <img class="hero__header-logo" src="/__spritemap#sprite-header-logo-view" alt="Логотип" width="52"
-               height="52">
-          <button class="hero__header-burger-menu">
+            height="52">
+          <button class="hero__header-burger-menu" type="button">
             <span class="hero__header-burger-menu-text">Меню</span>
-            <svg class="hero__header-burger-menu-icon" aria-label="" width="46" height="46">
+            <svg class="hero__header-burger-menu-icon" width="46" height="46">
               <use href="/__spritemap#sprite-burger-button"></use>
             </svg>
           </button>
         </div>
-        <nav class="hero__pagination">
+        <nav class="hero__pagination" aria-label="Выбор слайдов">
           <ul class="hero__pagination-list">
             <li class="hero__pagination-item hero__pagination-item--active"></li>
             <li class="hero__pagination-item"></li>
@@ -40,21 +40,23 @@
         <div class="hero__slider">
           <div class="hero__slider-item">
             <h3 class="hero__slider-item-header">Глобальный профессиональный опыт обучения за рубежом</h3>
-            <p>Погрузитесь в академическую программу, проходя практику в разных городах,
-              ощущая настоящий студенческий стиль жизни!</p>
-            <svg class="hero__slider-angle" width="10" height="10">
-              <use href="/__spritemap#sprite-right-top-angle"></use>
-            </svg>
-            <div class="hero__slider-more-link-background-wrapper">
-              <a class="hero__slider-more-link more-info-link" href="#">
-                <span class="hero__slider-more-link-text more-info-link-text">Подробнее</span>
-                <svg width="34" height="34">
-                  <use href="/__spritemap#sprite-more-link-icon"></use>
-                </svg>
-              </a>
-              <svg class="hero__slider-more-link-angle" width="10" height="10">
+            <div class="hero__slider-item-flex-wrapper">
+              <p>Погрузитесь в академическую программу, проходя практику <br>в разных городах,
+                ощущая настоящий студенческий стиль жизни!</p>
+              <svg class="hero__slider-angle" width="10" height="10">
                 <use href="/__spritemap#sprite-right-top-angle"></use>
               </svg>
+              <div class="hero__slider-more-link-background-wrapper">
+                <a class="hero__slider-more-link more-info-link" href="#">
+                  <span class="hero__slider-more-link-text more-info-link__text">Подробнее</span>
+                  <svg class="hero__slider-more-link-icon more-info-link__icon" width="34" height="34">
+                    <use href="/__spritemap#sprite-more-link-icon"></use>
+                  </svg>
+                </a>
+                <svg class="hero__slider-more-link-angle" width="10" height="10">
+                  <use href="/__spritemap#sprite-right-top-angle"></use>
+                </svg>
+              </div>
             </div>
           </div>
         </div>
@@ -74,8 +76,8 @@
           проблем, с которыми сталкиваются в мире. Цель центра — наделить этих людей способностью инициировать значимые
           изменения.</p>
         <a class="about__more-info-link more-info-link" href="#">
-          <span class="about__more-info-link-text more-info-link-text">Подробнее о проекте</span>
-          <svg class="about__more-info-link-icon" width="34" height="34">
+          <span class="about__more-info-link-text more-info-link__text">Подробнее о проекте</span>
+          <svg class="about__more-info-link-icon more-info-link__icon" width="34" height="34">
             <use href="/__spritemap#sprite-more-link-icon"></use>
           </svg>
         </a>
@@ -146,8 +148,8 @@
           </div>
         </div>
         <a class="programs__more-info-link more-info-link" href="#">
-          <span class="programs__more-info-link-text more-info-link-text">Все программы</span>
-          <svg class="programs__more-info-link-icon" width="34" height="34">
+          <span class="programs__more-info-link-text more-info-link__text">Все программы</span>
+          <svg class="programs__more-info-link-icon more-info-link__icon" width="34" height="34">
             <use href="/__spritemap#sprite-more-link-icon"></use>
           </svg>
         </a>
@@ -163,7 +165,7 @@
           сведения о доступных программах и городах, в которых можете пройти программу.</p>
         <picture>
           <img class="grant__img" src="img/mobile/grant-img-1x.webp" width="290" height="200"
-               srcset="img/mobile/grant-img-2x.webp 2x" alt="Фотография с указателями в разные города мира">
+            srcset="img/mobile/grant-img-2x.webp 2x" alt="Фотография с указателями в разные города мира">
         </picture>
       </div>
       <div class="grant__right-side-desktop">
@@ -228,7 +230,7 @@
             <use href="/__spritemap#sprite-right-bottom-angle"></use>
           </svg>
           <svg class="news__item-date-angle news__item-date-angle--after news__item-date-angle--after-travel" width="16"
-               height="16">
+            height="16">
             <use href="/__spritemap#sprite-right-bottom-angle"></use>
           </svg>
           <span class="news__item-date news__item-date--travel">20/03/2023</span>
@@ -247,7 +249,7 @@
           </div>
         </div>
       </div>
-      <nav class="news__pagination">
+      <nav class="news__pagination" aria-label="Выбор новости">
         <button class="news__pagination-switcher news__pagination-switcher--left news__pagination-switcher--disabled"
                 type="button">
           <span class="visually-hidden">Влево</span>
@@ -380,7 +382,7 @@
           <div class="reviews__slide-flex-wrapper">
             <picture>
               <img class="reviews__slide-avatar" src="img/mobile/reviews-slider/lola-alex-1x.webp" alt="Аватар"
-                   width="60" height="60" srcset="img/mobile/reviews-slider/lola-alex-2x.webp 2x">
+                width="60" height="60" srcset="img/mobile/reviews-slider/lola-alex-2x.webp 2x">
             </picture>
             <span class="reviews__slide-name">Лола <br>Алекс</span>
           </div>
@@ -425,7 +427,7 @@
       <div class="contacts__map-wrapper">
         <picture>
           <img class="contacts__map" src="img/mobile/map-1x.webp" alt="Карта" width="290" height="240"
-               srcset="img/mobile/map-2x.webp 2x">
+            srcset="img/mobile/map-2x.webp 2x">
         </picture>
       </div>
     </div>
@@ -445,7 +447,7 @@
             <textarea class="form__textarea" id="message" name="message"></textarea>
             <label class="form__label" for="city">Выберите город</label>
             <select class="form__select" id="city" name="city" required>
-              <option value=""></option>
+              <option value="" label=" "></option>
               <option class="form__select-option" value="petersburg">Санкт-Петербург</option>
               <option class="form__select-option" value="petersburg">Санкт-Петербург</option>
               <option class="form__select-option" value="petersburg">Санкт-Петербург</option>
@@ -485,18 +487,21 @@
     <a class="footer__privacy-policy" href="#">Политика конфиденциальности</a>
     <span class="footer__copyright">Стажировка © 2023 Все права защищены</span>
     <div class="footer__social-links">
-      <a class="footer__social-link" href="#" target="_blank">
-        <svg class="footer__social-link-icon" width="11.56" height="6.3">
+      <a class="footer__social-link" href="#" target="_blank" rel="noopener noreferrer">
+        <span class="visually-hidden">ВКонтакте</span>
+        <svg class="footer__social-link-icon" width="12" height="6">
           <use href="/__spritemap#sprite-vk"></use>
         </svg>
       </a>
-      <a class="footer__social-link" href="#" target="_blank">
-        <svg class="footer__social-link-icon" width="6.83" height="11.56">
+      <a class="footer__social-link" href="#" target="_blank" rel="noopener noreferrer">
+        <span class="visually-hidden">Одноклассники</span>
+        <svg class="footer__social-link-icon" width="7" height="12">
           <use href="/__spritemap#sprite-ok"></use>
         </svg>
       </a>
-      <a class="footer__social-link" href="#" target="_blank">
-        <svg class="footer__social-link-icon" width="10.51" height="11.03">
+      <a class="footer__social-link" href="#" target="_blank" rel="noopener noreferrer">
+        <span class="visually-hidden">Реддит</span>
+        <svg class="footer__social-link-icon" width="11" height="11">
           <use href="/__spritemap#sprite-reddit"></use>
         </svg>
       </a>
