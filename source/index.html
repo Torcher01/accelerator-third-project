@@ -118,6 +118,12 @@
     <div class="container">
       <div class="programs__header-flex-wrapper">
         <h2 class="programs__header">Программы</h2>
+        <a class="programs__more-info-link more-info-link" href="#">
+          <span class="programs__more-info-link-text more-info-link__text">Все программы</span>
+          <svg class="programs__more-info-link-icon more-info-link__icon" width="34" height="34">
+            <use href="/__spritemap#sprite-more-link-icon"></use>
+          </svg>
+        </a>
         <div class="programs__slider-buttons">
           <button class="programs__slider-button programs__slider-button--left programs__slider-button--disabled"
                   type="button">
@@ -134,26 +140,42 @@
           </button>
         </div>
       </div>
-      <div class="programs__slide">
-        <h3 class="programs__slide-header">Стажировки</h3>
-        <svg class="programs__slide-angle" width="18" height="18">
-          <use href="/__spritemap#sprite-right-bottom-angle"></use>
-        </svg>
-        <div class="programs__slide-text-background-wrapper">
-          <div class="programs__slide-flex-wrapper">
-            <p>Получите незаменимый опыт работы в крупнейших мировых компаниях.</p>
-            <svg class="programs__slide-link-icon" width="30" height="30">
-              <use href="/__spritemap#sprite-more-link-icon"></use>
-            </svg>
+      <div class="programs__slides">
+        <div class="programs__slide programs__slide--internships">
+          <h3 class="programs__slide-header">Стажировки</h3>
+          <svg class="programs__slide-angle" width="18" height="18">
+            <use href="/__spritemap#sprite-right-bottom-angle"></use>
+          </svg>
+          <div class="programs__slide-text-background-wrapper">
+            <div class="programs__slide-flex-wrapper">
+              <p>Получите незаменимый опыт работы в крупнейших мировых компаниях.</p>
+              <svg class="programs__slide-link-icon" width="30" height="30">
+                <use href="/__spritemap#sprite-more-link-icon"></use>
+              </svg>
+            </div>
           </div>
         </div>
-        <a class="programs__more-info-link more-info-link" href="#">
-          <span class="programs__more-info-link-text more-info-link__text">Все программы</span>
-          <svg class="programs__more-info-link-icon more-info-link__icon" width="34" height="34">
-            <use href="/__spritemap#sprite-more-link-icon"></use>
+        <div class="programs__slide programs__slide--volunteering">
+          <h3 class="programs__slide-header programs__slide-header--volunteering">Волонтёрство</h3>
+          <svg class="programs__slide-angle" width="18" height="18">
+            <use href="/__spritemap#sprite-right-bottom-angle"></use>
           </svg>
-        </a>
+          <div class="programs__slide-text-background-wrapper">
+            <div class="programs__slide-flex-wrapper">
+              <p>Помогайте другим <br>и развивайте свои <br>лидерские качества</p>
+              <svg class="programs__slide-link-icon" width="30" height="30">
+                <use href="/__spritemap#sprite-more-link-icon"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
       </div>
+      <nav class="programs__pagination">
+        <ul class="programs__pagination-list">
+          <li class="programs__pagination-item programs__pagination-item--active"></li>
+          <li class="programs__pagination-item programs__pagination-item--disabled"></li>
+        </ul>
+      </nav>
     </div>
   </section>
   <section class="grant" data-test="grant">
@@ -162,8 +184,9 @@
       <div class="grant__left-side-desktop">
         <h3 class="grant__how-to-go-header">Как поехать</h3>
         <p>Свяжитесь с координатором, чтобы узнать полную информацию. Вы получите актуальные
-          сведения о доступных программах и городах, в которых можете пройти программу.</p>
+          сведения о доступных программах <br>и городах, в которых можете пройти программу.</p>
         <picture>
+          <source media="(min-width: 768px)" srcset="img/tablet/grant-img-1x.webp, img/tablet/grant-img-2x.webp 2x">
           <img class="grant__img" src="img/mobile/grant-img-1x.webp" width="290" height="200"
             srcset="img/mobile/grant-img-2x.webp 2x" alt="Фотография с указателями в разные города мира">
         </picture>
@@ -210,12 +233,12 @@
             <use href="/__spritemap#sprite-right-bottom-angle"></use>
           </svg>
           <div class="news__item-date">23/03/2023</div>
-          <h3 class="news__item-header">Интервью с участницей программы стажировки</h3>
+          <h3 class="news__item-header">Интервью <br>с участницей программы стажировки</h3>
           <svg class="news__item-header-angle" width="16" height="16">
             <use href="/__spritemap#sprite-right-bottom-angle"></use>
           </svg>
           <div class="news__item-flex-wrapper">
-            <p><span>Саша рассказывает, как попала <br>в программу и как прошла 6- месячная стажировка в ISOFound</span>
+            <p><span>Саша рассказывает, <br>как попала <br>в программу <br>и как прошла 6-месячная стажировка в ISOFound</span>
             </p>
             <svg class="news__item-icon" width="30" height="30">
               <use href="/__spritemap#sprite-more-link-icon"></use>
@@ -234,7 +257,7 @@
             <use href="/__spritemap#sprite-right-bottom-angle"></use>
           </svg>
           <span class="news__item-date news__item-date--travel">20/03/2023</span>
-          <h3 class="news__item-header news__item-header--travel">Путешествуем по миру</h3>
+          <h3 class="news__item-header news__item-header--travel">Путешествуем <br>по миру</h3>
           <svg class="news__item-header-angle news__item-header-angle--travel" width="16" height="16">
             <use href="/__spritemap#sprite-right-bottom-angle"></use>
           </svg>
@@ -244,6 +267,52 @@
               <use href="/__spritemap#sprite-more-link-icon"></use>
             </svg>
             <svg class="news__item-text-angle news__item-text-angle--travel" width="16" height="16">
+              <use href="/__spritemap#sprite-right-bottom-angle"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="news__item news__item--volunteering">
+          <svg class="news__item-date-angle news__item-date-angle--volunteering" width="16" height="16">
+            <use href="/__spritemap#sprite-right-bottom-angle"></use>
+          </svg>
+          <svg class="news__item-date-angle news__item-date-angle--after news__item-date-angle--after-volunteering" width="16" height="16">
+            <use href="/__spritemap#sprite-right-bottom-angle"></use>
+          </svg>
+          <div class="news__item-date">17/03/2023</div>
+          <h3 class="news__item-header">Новая программа волонтёрства</h3>
+          <svg class="news__item-header-angle news__item-header-angle--volunteering" width="16" height="16">
+            <use href="/__spritemap#sprite-right-bottom-angle"></use>
+          </svg>
+          <div class="news__item-flex-wrapper">
+            <p><span>Программа помощи детям длительностью 4 месяца</span>
+            </p>
+            <svg class="news__item-icon news__item-icon--volunteering" width="30" height="30">
+              <use href="/__spritemap#sprite-more-link-icon"></use>
+            </svg>
+            <svg class="news__item-text-angle" width="16" height="16">
+              <use href="/__spritemap#sprite-right-bottom-angle"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="news__item news__item--career">
+          <svg class="news__item-date-angle news__item-date-angle--career" width="16" height="16">
+            <use href="/__spritemap#sprite-right-bottom-angle"></use>
+          </svg>
+          <svg class="news__item-date-angle news__item-date-angle--after news__item-date-angle--after-career" width="16"
+               height="16">
+            <use href="/__spritemap#sprite-right-bottom-angle"></use>
+          </svg>
+          <span class="news__item-date">10/03/2023</span>
+          <h3 class="news__item-header">Построй свою карьеру</h3>
+          <svg class="news__item-header-angle news__item-header-angle--career" width="16" height="16">
+            <use href="/__spritemap#sprite-right-bottom-angle"></use>
+          </svg>
+          <div class="news__item-flex-wrapper">
+            <p><span>Ведущие компании <br>готовы трудоустроить выпускников стажировки</span></p>
+            <svg class="news__item-icon news__item-icon--career" width="30" height="30">
+              <use href="/__spritemap#sprite-more-link-icon"></use>
+            </svg>
+            <svg class="news__item-text-angle news__item-text-angle--career" width="16" height="16">
               <use href="/__spritemap#sprite-right-bottom-angle"></use>
             </svg>
           </div>

@@ -15,6 +15,10 @@
   line-height: 20px;
   color: #ffffff;
   margin: 0 0 30px 15px;
+
+  & br {
+    display: none;
+  }
 }
 
 .grant__img {
@@ -74,4 +78,65 @@
 .grant__how-to-get-item-number--first {
   padding-left: 12px;
   width: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .grant__how-to-go-header {
+    font-size: 34px;
+    padding-top: 106px;
+    margin-left: 45px;
+    margin-bottom: 35px;
+  }
+
+  .grant__left-side-desktop p {
+    font-size: 16px;
+    margin-left: 45px;
+    margin-bottom: 40px;
+    width: 500px;
+
+    & br {
+      display: inline;
+    }
+  }
+
+  .grant__img {
+    width: 678px;
+    height: 375px;
+    margin-left: 45px;
+    margin-bottom: 49px;
+  }
+
+  .grant__how-to-get-header {
+    font-size: 28px;
+    width: auto;
+    margin-left: 45px;
+    margin-bottom: 48px;
+  }
+
+  .grant__how-to-get-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px 3px;
+    margin-left: 65px;
+    padding-bottom: 100px;
+  }
+
+  .grant__how-to-get-item {
+    font-size: 16px;
+    margin: 0;
+    padding: 30px 30px 30px 25px;
+  }
+
+  .grant__how-to-get-item-number {
+    font-size: 22px;
+    top: -11px;
+    width: 29px;
+    height: 31px;
+    padding-left: 10px;
+  }
+
+  .grant__how-to-get-item-number--first {
+    padding-left: 12px;
+    width: 26px;
+  }
 }

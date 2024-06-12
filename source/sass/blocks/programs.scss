@@ -1,4 +1,5 @@
 .programs__header-flex-wrapper {
+  position: relative;
   display: flex;
   margin-left: 15px;
   margin-bottom: 33px;
@@ -40,18 +41,33 @@
   stroke: #a9afb7;
 }
 
+.programs__slides {
+  display: flex;
+}
+
 .programs__slide {
   position: relative;
-  background-image: url("../../img/mobile/programs-slide-1-background-1x.webp");
-
-  @media (resolution >= 2dppx) {
-    background-image: url("../../img/mobile/programs-slide-1-background-2x.webp");
-  }
-
   background-repeat: no-repeat;
   margin-left: 15px;
   border-radius: 12px;
   padding-top: 271px;
+}
+
+.programs__slide--internships {
+  background-image: url("../../img/mobile/programs-slide-internships-background-1x.webp");
+
+  @media (resolution >= 2dppx) {
+    background-image: url("../../img/mobile/programs-slide-internships-background-2x.webp");
+  }
+}
+
+.programs__slide--volunteering {
+  display: none;
+  background-image: url("../../img/mobile/programs-slide-volunteering-background-1x.webp");
+
+  @media (resolution >= 2dppx) {
+    background-image: url("../../img/mobile/programs-slide-volunteering-background-2x.webp");
+  }
 }
 
 .programs__slide-header {
@@ -110,4 +126,126 @@
   margin-top: 18px;
   margin-left: 29px;
   margin-right: 18px;
+}
+
+.programs__pagination {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .programs__header {
+    font-size: 34px;
+  }
+
+  .programs__header-flex-wrapper {
+    margin-left: 45px;
+    margin-bottom: 48px;
+  }
+
+  .programs__slider-buttons {
+    position: absolute;
+    bottom: -524px;
+    right: 52px;
+  }
+
+  .programs__more-info-link {
+    position: absolute;
+    top: -9px;
+    right: 45px;
+    width: 232px;
+    height: 54px;
+  }
+
+  .programs__more-info-link-text {
+    margin-top: 0;
+  }
+
+  .programs__slides {
+    margin-bottom: 50px;
+  }
+
+  .programs__slide {
+    margin-left: 45px;
+    margin-right: -15px;
+    width: 324px;
+    padding-top: 285px;
+  }
+
+  .programs__slide--internships {
+    background-image: url("../../img/tablet/programs-slide-internships-background-1x.webp");
+
+    @media (resolution >= 2dppx) {
+      background-image: url("../../img/tablet/programs-slide-internships-background-2x.webp");
+    }
+  }
+
+  .programs__slide--volunteering {
+    display: block;
+    background-image: url("../../img/tablet/programs-slide-volunteering-background-1x.webp");
+
+    @media (resolution >= 2dppx) {
+      background-image: url("../../img/tablet/programs-slide-volunteering-background-2x.webp");
+    }
+  }
+
+  .programs__slide-angle {
+    right: 113px;
+    bottom: 97px;
+  }
+
+  .programs__slide-header {
+    font-size: 20px;
+    padding: 14px 39px 1px 18px;
+    margin-left: 20px;
+  }
+
+  .programs__slide-header--volunteering{
+    padding-right: 19px;
+  }
+
+  .programs__slide-text-background-wrapper {
+    margin-left: 20px;
+  }
+
+  .programs__slide-text-background-wrapper {
+    margin-bottom: 10px;
+  }
+
+  .programs__slide-flex-wrapper p {
+    font-size: 14px;
+    line-height: 20px;
+    width: 200px;
+    padding-top: 12px;
+    padding-bottom: 15px;
+  }
+
+  .programs__slide-link-icon {
+    margin-top: 27px;
+    margin-left: 18px;
+  }
+
+  .programs__pagination {
+    display: block;
+  }
+
+  .programs__pagination-list {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 60px 45px;
+  }
+
+  .programs__pagination-item {
+    height: 2px;
+    background-color: #316dc2;
+  }
+
+  .programs__pagination-item--active {
+    width: 326px;
+  }
+
+  .programs__pagination-item--disabled {
+    width: 236px;
+    opacity: 0.2;
+  }
 }

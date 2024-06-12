@@ -41,23 +41,31 @@
 }
 
 .news__item--interview {
-  background-image: url("../../img/mobile/news-interview-background-1x.webp");
+  background-image: url("../../img/mobile/news/interview-background-1x.webp");
 
   @media (resolution >= 2dppx) {
-    background-image: url("../../img/mobile/news-interview-background-2x.webp");
+    background-image: url("../../img/mobile/news/interview-background-2x.webp");
   }
 
   padding-top: 186px;
 }
 
 .news__item--travel {
-  background-image: url("../../img/mobile/news-travel-background-1x.webp");
+  background-image: url("../../img/mobile/news/travel-background-1x.webp");
 
   @media (resolution >= 2dppx) {
-    background-image: url("../../img/mobile/news-travel-background-2x.webp");
+    background-image: url("../../img/mobile/news/travel-background-2x.webp");
   }
 
   padding-top: 126px;
+}
+
+.news__item--volunteering {
+  display: none;
+}
+
+.news__item--career {
+  display: none;
 }
 
 .news__item-date {
@@ -229,4 +237,195 @@
 
 .news__pagination-item-link--active {
   color: #ffffff;
+}
+
+@media (min-width: $tablet-width) {
+  .news__header {
+    font-size: 34px;
+    margin: 56px 0 35px 209px;
+  }
+
+  .news__category-button-list {
+    margin-left: 47px;
+    margin-bottom: 30px;
+  }
+
+  .news__category-button {
+    font-size: 14px;
+    letter-spacing: 0.28px;
+    padding: 13px 20px;
+  }
+
+  .news__items {
+    display: grid;
+    grid-template-columns: 325px 325px;
+    margin-left: 45px;
+    margin-bottom: 30px;
+    gap: 30px 29px;
+  }
+
+  .news__item {
+    margin: 0;
+  }
+
+  .news__item--interview {
+    background-image: url("../../img/tablet/news/interview-background-1x.webp");
+
+    @media (resolution >= 2dppx) {
+      background-image: url("../../img/tablet/news/interview-background-2x.webp");
+    }
+
+    padding-top: 101px;
+  }
+
+  .news__item--travel {
+    background-image: url("../../img/tablet/news/travel-background-1x.webp");
+
+    @media (resolution >= 2dppx) {
+      background-image: url("../../img/tablet/news/travel-background-2x.webp");
+    }
+    padding-top: 189px;
+  }
+
+  .news__item--volunteering {
+    display: block;
+    background-image: url("../../img/tablet/news/volunteering-background-1x.webp");
+
+    @media (resolution >= 2dppx) {
+      background-image: url("../../img/tablet/news/volunteering-background-2x.webp");
+    }
+    padding-top: 189px;
+  }
+
+  .news__item--career {
+    display: block;
+    background-image: url("../../img/tablet/news/career-background-1x.webp");
+
+    @media (resolution >= 2dppx) {
+      background-image: url("../../img/tablet/news/career-background-2x.webp");
+    }
+    padding-top: 169px;
+  }
+
+  .news__item-header {
+    font-size: 20px;
+    line-height: 24px;
+    width: 207px;
+    padding-top: 11px;
+    padding-bottom: 5px;
+  }
+
+  .news__item-icon {
+    right: 103px;
+    top: 37px;
+  }
+
+  .news__item-icon--travel {
+    top: 17px;
+  }
+
+  .news__item-icon--volunteering {
+    top: 17px;
+  }
+
+  .news__item-icon--career {
+    top: 27px;
+  }
+
+  .news__item-flex-wrapper p {
+    font-size: 14px;
+    line-height: 20px;
+    padding-top: 12px;
+    padding-bottom: 15px;
+    width: 240px;
+  }
+
+  .news__item-text-angle {
+    right: 106px;
+    bottom: 0;
+  }
+
+  .news__item-flex-wrapper p br {
+    &:nth-child(2) {
+      display: none;
+    }
+  }
+
+  .news__item-date-angle {
+    top: 85px;
+  }
+
+  .news__item-date-angle--travel {
+    top: 173px;
+  }
+
+  .news__item-date-angle--volunteering {
+    top: 173px;
+  }
+
+  .news__item-date-angle--career {
+    top: 153px;
+  }
+
+  .news__item-date-angle--after {
+    top: 115px;
+  }
+
+  .news__item-date-angle--after-travel {
+    top: 203px;
+  }
+
+  .news__item-date-angle--after-volunteering {
+    top: 203px;
+    left: 75px;
+  }
+
+  .news__item-date-angle--after-career {
+    top: 183px;
+    left: 76px;
+  }
+
+  .news__item-header-angle {
+    right: 102px;
+    bottom: 107px;
+  }
+
+  .news__item-header-angle--travel {
+    top: 267px;
+    left: 207px;
+  }
+
+  .news__item-header-angle--volunteering {
+    top: 267px;
+    left: 207px;
+  }
+
+  .news__item-header-angle--career {
+    top: 247px;
+  }
+
+  .news__item-text-angle {
+    right: 69px;
+  }
+
+  .news__pagination {
+    margin-left: 51px;
+  }
+
+  .news__pagination-item {
+    padding: 7px 13px;
+    margin-right: 18px;
+
+    &:last-child {
+      margin-right: 227px;
+    }
+  }
+
+  .news__pagination-switcher--left {
+    margin-right: 229px;
+  }
+
+  .news__pagination-item-link {
+    font-size: 16px;
+  }
 }
