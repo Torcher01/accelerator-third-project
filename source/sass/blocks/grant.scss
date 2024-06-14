@@ -138,3 +138,62 @@
     width: 26px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .grant__flex-wrapper {
+    display: flex;
+  }
+
+  .grant__how-to-go-header {
+    font-size: 50px;
+    padding-top: 117px;
+    margin-left: 100px;
+    margin-bottom: 26px;
+  }
+
+  .grant__left-side-desktop p {
+    line-height: 26px;
+    margin-left: 100px;
+  }
+
+  .grant__how-to-get-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin-left: 156px;
+    padding-bottom: 120px;
+  }
+
+  .grant__how-to-get-header {
+    font-size: 32px;
+    line-height: 36px;
+    margin-top: 130px;
+    margin-left: 136px;
+    margin-bottom: 55px;
+    width: 373px;
+  }
+
+  .grant__how-to-get-item {
+    line-height: 26px;
+    padding-right: 203px;
+    margin-bottom: 23px;
+  }
+
+  .grant__how-to-get-item-number {
+    top: -14px;
+    height: 35px;
+  }
+
+  .grant__how-to-get-item-text {
+    display: inline-block;
+    width: 420px;
+  }
+
+  .grant__how-to-get-item-text br {
+    display: none;
+  }
+
+  .grant__img {
+    margin-left: 100px;
+  }
+}

@@ -151,3 +151,68 @@
     margin-top: 4px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .faq__header {
+    font-size: 50px;
+    margin-left: 507px;
+    margin-bottom: 67px;
+  }
+
+  .faq__questions {
+    margin-left: 206px;
+    margin-bottom: 122px;
+  }
+
+  .faq__questions-item {
+    width: 1024px;
+    padding: 43px 0 40px;
+  }
+
+  .faq__questions-item-header {
+    font-size: 28px;
+    line-height: 34px;
+    margin-left: 41px;
+    margin-top: 0;
+    width: 894px;
+  }
+
+  .faq__questions-item-header--learning {
+    margin-top: -3px;
+  }
+
+  .faq__questions-item-header--registration {
+    margin-top: -3px;
+  }
+
+  .faq__questions-item-header br {
+    display: none;
+  }
+
+  .faq__questions-item-header--learning br:nth-child(2) {
+    display: none;
+  }
+
+  .faq__questions-item p {
+    line-height: 26px;
+    width: 914px;
+    margin-left: 40px;
+  }
+
+  .faq__questions-item p br:first-child {
+    display: none;
+  }
+
+  .faq__questions-item p br {
+    display: none;
+  }
+
+  .faq__questions-item-expand {
+    margin-left: 9px;
+    margin-top: -3px;
+  }
+
+  .faq__questions-item-expand--cost {
+    margin-left: 13px;
+  }
+}

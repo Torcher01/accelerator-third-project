@@ -218,3 +218,55 @@
     height: 46px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .form__background-wrapper {
+    background-image: url("../../img/desktop/form-background-1x.webp");
+
+    @media (resolution >= 2dppx) {
+      background-image: url("../../img/desktop/form-background-2x.webp");
+    }
+
+    margin-left: 100px;
+    margin-bottom: 120px;
+  }
+
+  .form__content {
+    width: 420px;
+    padding-top: 44px;
+    padding-left: 70px;
+    padding-bottom: 40px;
+  }
+
+  .form__header {
+    font-size: 32px;
+    margin-bottom: 33px;
+  }
+
+  .form__text {
+    line-height: 26px;
+  }
+
+  .form__label {
+    margin-bottom: 12px;
+  }
+
+  .form__input {
+    width: 344px;
+  }
+
+  .form__textarea {
+    width: 344px;
+    height: 84px;
+    margin-bottom: 15px;
+  }
+
+  .form__select {
+    width: 350px;
+    background-position-x: 312px;
+  }
+
+  .form__submit-button {
+    width: 350px;
+  }
+}

@@ -5,6 +5,7 @@
     background-image: url("../../img/mobile/header-hero-background-2x.webp");
   }
 
+  background-repeat: no-repeat;
   padding-bottom: 20px;
 }
 
@@ -240,5 +241,67 @@
   .hero__slider-more-link-text {
     margin-left: 30px;
     margin-right: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .hero__background-wrapper {
+    background-image: url("../../img/desktop/header-hero-background-1x.webp");
+
+    @media (resolution >= 2dppx) {
+      background-image: url("../../img/desktop/header-hero-background-2x.webp");
+    }
+  }
+
+  .hero__header {
+    padding-left: 100px;
+    padding-bottom: 307px;
+  }
+
+  .hero__header-logo {
+    margin-right: 1052px;
+  }
+
+  .hero__header-burger-menu-text {
+    margin-left: 21px;
+  }
+
+  .hero__pagination {
+    margin-left: 100px;
+  }
+
+  .hero__slider {
+    margin-left: 100px;
+  }
+
+  .hero__slider-item-header {
+    font-size: 54px;
+    line-height: 62px;
+    width: 849px;
+    padding-top: 40px;
+    padding-left: 50px;
+    padding-bottom: 30px;
+  }
+
+  .hero__slider-item p {
+    line-height: 26px;
+    padding-left: 50px;
+    width: 410px;
+    padding-right: 50px;
+  }
+
+  .hero__slider-item p br {
+    display: none;
+  }
+
+  .hero__slider-more-link-background-wrapper {
+    padding-right: 50px;
+  }
+
+  .hero__slider-more-link {
+    margin-top: 10px;
+    margin-left: 0;
+    width: 197px;
+    height: 56px;
   }
 }

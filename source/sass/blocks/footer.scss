@@ -151,3 +151,47 @@
     height: 16px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .footer {
+    padding-bottom: 45px;
+  }
+
+  .footer__logo {
+    margin-left: 100px;
+    margin-right: 53px;
+  }
+
+  .footer__link {
+    margin-right: 30px;
+  }
+
+  .footer__link--reviews {
+    margin-left: 31px;
+  }
+
+  .footer__social-links {
+    right: 331px;
+    bottom: 97px;
+  }
+
+  .footer__social-link {
+    margin-right: 20px;
+  }
+
+  .footer__privacy-policy {
+    font-size: 14px;
+    width: 212px;
+    margin-left: 1128px;
+    margin-top: 7px;
+    padding-bottom: 2px;
+  }
+
+  .footer__copyright {
+    display: block;
+    font-size: 14px;
+    margin-top: -24px;
+    margin-bottom: 0;
+    margin-left: 100px;
+  }
+}

@@ -235,3 +235,79 @@
     opacity: 0.2;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .reviews__header {
+    font-size: 50px;
+    margin-left: 103px;
+  }
+
+  .reviews__flex-wrapper {
+    margin-bottom: 40px;
+  }
+
+  .reviews__slide-list {
+    margin-left: 100px;
+  }
+
+  .reviews__slide {
+    padding-right: 44px;
+    margin-right: 32px;
+  }
+
+  .reviews__slide-name {
+    font-size: 18px;
+    margin-top: -2px;
+  }
+
+  .reviews__slide-data-text {
+    line-height: 18px;
+  }
+
+  .reviews__slide-data {
+    margin-left: 119px;
+  }
+
+  .reviews__slide-data--david-ivanov {
+    margin-left: 126px;
+  }
+
+  .reviews__slide-data-title {
+    margin-bottom: 10px;
+  }
+
+  .reviews__slide-header {
+    font-size: 24px;
+    line-height: 26px;
+    width: 510px;
+    margin-bottom: 25px;
+  }
+
+  .reviews__slide p {
+    line-height: 26px;
+    width: 500px;
+  }
+
+  .reviews__slide--lola-alex p br:nth-child(2),
+  .reviews__slide--lola-alex p br:nth-child(3) {
+    display: none;
+  }
+
+  .reviews__pagination-list {
+    margin-left: 100px;
+    margin-bottom: 70px;
+  }
+
+  .reviews__pagination-item--active {
+    width: 394px;
+  }
+
+  .reviews__pagination-item--disabled {
+    width: 371px;
+  }
+
+  .reviews__slider-buttons {
+    top: 625px;
+    right: 106px;
+  }
+}

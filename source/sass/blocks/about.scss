@@ -83,17 +83,17 @@
   display: none;
 }
 
-.about__advantages-item:last-child h3 {
+.about__advantages-item--money h3 {
   line-height: 20px;
   margin-top: 15px;
   margin-bottom: 15px;
 }
 
-.about__advantages-item:last-child p {
+.about__advantages-item--money p {
   width: 280px;
 }
 
-.about__advantages-item:nth-child(3) h3 {
+.about__advantages-item--members-country h3 {
   margin-bottom: 15px;
 }
 
@@ -169,12 +169,12 @@
     width: 251px;
     margin-bottom: 0;
     margin-left: 0;
+  }
 
-    &:last-child h3 {
-      margin-top: 16px;
-      line-height: 22px;
-      margin-bottom: 14px;
-    }
+  .about__advantages-item--money h3 {
+    margin-top: 16px;
+    line-height: 22px;
+    margin-bottom: 14px;
   }
 
   .about__advantages-item h3 {
@@ -195,5 +195,110 @@
 
   .about__advantages-item p br {
     display: inline;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about__flex-wrapper {
+    display: flex;
+  }
+
+  .about__header {
+    font-size: 50px;
+    margin-top: 67px;
+    margin-left: 100px;
+    margin-bottom: 25px;
+  }
+
+  .about__header-part p {
+    font-size: 22px;
+    line-height: 32px;
+    margin-left: 100px;
+  }
+
+  .about__goal-part {
+    margin-top: 70px;
+    margin-left: 32px;
+  }
+
+  .about__goal-part h3 {
+    font-size: 32px;
+    margin-bottom: 39px;
+  }
+
+  .about__goal-part p {
+    line-height: 26px;
+    margin-bottom: 50px;
+  }
+
+  .about__advantages {
+    margin-left: 100px;
+    padding-left: 120px;
+    width: 1120px;
+    grid-template-columns: 490px 490px;
+    gap: 54px 46px;
+  }
+
+  .about__advantages-item-flex-wrapper {
+    display: flex;
+  }
+
+  .about__advantages-item {
+    width: 482px;
+    padding-bottom: 30px;
+  }
+
+  .about__advantages-item h3 {
+    font-size: 26px;
+    line-height: 30px;
+    margin-top: 50px;
+    margin-left: 40px;
+    width: 170px;
+  }
+
+  .about__advantages-item p {
+    width: 175px;
+    margin-top: 50px;
+    margin-left: 31px;
+    margin-bottom: 0;
+  }
+
+  .about__advantages-item p br {
+    display: none;
+  }
+
+  .about__advantages-item--members-count p {
+    margin-top: 30px;
+  }
+
+  .about__advantages-item--members-count p br {
+    display: inline;
+  }
+
+  .about__advantages-item--members-country h3 {
+    margin-top: 40px;
+  }
+
+  .about__advantages-item--members-country p {
+    margin-top: 30px;
+    width: 200px;
+  }
+
+  .about__advantages-item--members-country p br {
+    display: inline;
+  }
+
+  .about__advantages-item--money h3 {
+    margin-top: 40px;
+  }
+
+  .about__advantages-item--money p {
+    margin-top: 40px;
+    width: 200px;
+  }
+
+  .about__advantages-item--members-country,
+  .about__advantages-item--money {
+    padding-bottom: 26px;
   }
 }

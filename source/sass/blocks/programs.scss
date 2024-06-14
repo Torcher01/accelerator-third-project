@@ -246,3 +246,120 @@
     opacity: 0.2;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .programs__header-flex-wrapper {
+    margin-left: 100px;
+    margin-bottom: 41px;
+  }
+
+  .programs__header {
+    font-size: 50px;
+    margin-top: 14px;
+  }
+
+  .programs__more-info-link {
+    top: 14px;
+    right: 100px;
+  }
+
+  .programs__more-info-link-text {
+    margin-right: 31px;
+  }
+
+  .programs__slides {
+    margin-left: 100px;
+    margin-bottom: 47px;
+  }
+
+  .programs__slide {
+    margin: 0 32px 0 0;
+    width: 392px;
+    padding-top: 280px;
+    padding-bottom: 10px;
+  }
+
+  .programs__slide--internships {
+    background-image: url("../../img/desktop/programs-slide-internships-background-1x.webp");
+
+    @media (resolution >= 2dppx) {
+      background-image: url("../../img/desktop/programs-slide-internships-background-2x.webp");
+    }
+  }
+
+  .programs__slide--volunteering {
+    display: block;
+    background-image: url("../../img/desktop/programs-slide-volunteering-background-1x.webp");
+
+    @media (resolution >= 2dppx) {
+      background-image: url("../../img/desktop/programs-slide-volunteering-background-2x.webp");
+    }
+  }
+
+  .programs__slide--learning {
+    background-image: url("../../img/desktop/programs-slide-learning-background-1x.webp");
+
+    @media (resolution >= 2dppx) {
+      background-image: url("../../img/desktop/programs-slide-learning-background-2x.webp");
+    }
+  }
+
+  .programs__slide-header {
+    font-size: 24px;
+    padding-right: 37px;
+    padding-bottom: 0;
+    padding-top: 13px;
+  }
+
+  .programs__slide-header--volunteering {
+    padding-right: 13px;
+  }
+
+  .programs__slide-header--learning {
+    padding-right: 108px;
+  }
+
+  .programs__slide-flex-wrapper p {
+    padding-top: 22px;
+    padding-bottom: 24px;
+    line-height: 18px;
+    width: 239px;
+  }
+
+  .programs__slide-flex-wrapper p br {
+    display: none;
+  }
+
+  .programs__slide--internships p {
+    padding-top: 12px;
+    padding-bottom: 15px;
+  }
+
+  .programs__slide-link-icon {
+    margin-top: 25px;
+    margin-left: 16px;
+  }
+
+  .programs__slide-angle {
+    right: 160px;
+    bottom: 102px;
+  }
+
+  .programs__pagination-list {
+    margin-left: 100px;
+    margin-bottom: 70px;
+  }
+
+  .programs__pagination-item--active {
+    width: 394px;
+  }
+
+  .programs__pagination-item--disabled {
+    width: 371px;
+  }
+
+  .programs__slider-buttons {
+    bottom: -517px;
+    right: 107px;
+  }
+}

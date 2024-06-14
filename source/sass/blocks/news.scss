@@ -429,3 +429,220 @@
     font-size: 16px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .news__header {
+    font-size: 50px;
+    margin-left: 463px;
+    margin-top: 57px;
+    margin-bottom: 36px;
+  }
+
+  .news__item-date {
+    padding-right: 13px;
+  }
+
+  .news__category-button-list {
+    margin-left: 360px;
+    margin-bottom: 40px;
+  }
+
+  .news__category-button {
+    padding-left: 34px;
+    padding-right: 34px;
+    margin-right: -2px;
+  }
+
+  .news__category-button--internships {
+    margin-left: -22px;
+    margin-right: 1px;
+  }
+
+  .news__item-header {
+    font-size: 24px;
+    line-height: 26px;
+    width: 426px;
+    padding-top: 18px;
+    padding-bottom: 6px;
+  }
+
+  .news__item-header--travel {
+    width: 190px;
+    padding-top: 10px;
+    padding-bottom: 4px;
+  }
+
+  .news__item-header--volunteering {
+    width: 190px;
+    padding-top: 10px;
+    padding-bottom: 4px;
+  }
+
+  .news__item-header br {
+    display: none;
+  }
+
+  .news__item-flex-wrapper p {
+    line-height: 18px;
+    width: 468px;
+    padding-top: 12px;
+  }
+
+  .news__item-flex-wrapper p br {
+    display: none;
+  }
+
+  .news__item-flex-wrapper p span {
+    width: 410px;
+  }
+
+  .news__item-flex-wrapper--travel p {
+    width: 240px;
+    padding-top: 12px;
+  }
+
+  .news__item-flex-wrapper--travel p span {
+    width: 185px;
+  }
+
+  .news__item-flex-wrapper--volunteering p {
+    width: 244px;
+    padding-top: 12px;
+  }
+
+  .news__item-flex-wrapper--volunteering p span {
+    width: 185px;
+  }
+
+  .news__items {
+    display: flex;
+    gap: 0;
+    margin-left: 100px;
+    margin-bottom: 40px;
+  }
+
+  .news__item {
+    margin-right: 32px;
+    width: 286px;
+  }
+
+  .news__item--big {
+    width: 604px;
+  }
+
+  .news__item--interview {
+    background-image: url("../../img/desktop/news/interview-background-1x.webp");
+
+    @media (resolution >= 2dppx) {
+      background-image: url("../../img/desktop/news/interview-background-2x.webp");
+    }
+
+    padding-top: 231px;
+  }
+
+  .news__item--travel {
+    background-image: url("../../img/desktop/news/travel-background-1x.webp");
+
+    @media (resolution >= 2dppx) {
+      background-image: url("../../img/desktop/news/travel-background-2x.webp");
+    }
+
+    padding-top: 241px;
+  }
+
+  .news__item--volunteering {
+    display: block;
+    background-image: url("../../img/desktop/news/volunteering-background-1x.webp");
+
+    @media (resolution >= 2dppx) {
+      background-image: url("../../img/desktop/news/volunteering-background-2x.webp");
+    }
+
+    padding-top: 215px;
+  }
+
+  .news__item--career {
+    display: none;
+  }
+
+  .news__item-icon {
+    right: 154px;
+    top: 15px;
+  }
+
+  .news__item-icon--travel {
+    right: 64px;
+    top: 15px;
+  }
+
+  .news__item-icon--volunteering {
+    right: 60px;
+    top: 15px;
+  }
+
+  .news__item-date-angle {
+    top: 215px;
+  }
+
+  .news__item-date-angle--travel {
+    top: 225px;
+  }
+
+  .news__item-date-angle--volunteering {
+    top: 199px;
+  }
+
+  .news__item-date-angle--after {
+    top: 245px;
+    left: 78px;
+  }
+
+  .news__item-date-angle--after-travel {
+    top: 255px;
+  }
+
+  .news__item-date-angle--after-volunteering {
+    top: 229px;
+    left: 75px;
+  }
+
+  .news__item-header-angle {
+    right: 162px;
+    bottom: 63px;
+  }
+
+  .news__item-header-angle--travel {
+    top: 321px;
+    left: 190px;
+  }
+
+  .news__item-header-angle--volunteering {
+    top: 321px;
+    left: 190px;
+  }
+
+  .news__item-text-angle {
+    right: 120px;
+  }
+
+  .news__item-text-angle--travel {
+    right: 30px;
+  }
+
+  .news__item-text-angle--volunteering {
+    right: 26px;
+  }
+
+  .news__pagination {
+    margin-left: 107px;
+    margin-bottom: 127px;
+  }
+
+  .news__pagination-switcher--left {
+    margin-right: 509px;
+  }
+
+  .news__pagination-item:last-child {
+    margin-right: 509px;
+  }
+}
