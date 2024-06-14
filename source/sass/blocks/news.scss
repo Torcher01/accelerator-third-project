@@ -284,6 +284,7 @@
     @media (resolution >= 2dppx) {
       background-image: url("../../img/tablet/news/travel-background-2x.webp");
     }
+
     padding-top: 189px;
   }
 
@@ -294,6 +295,7 @@
     @media (resolution >= 2dppx) {
       background-image: url("../../img/tablet/news/volunteering-background-2x.webp");
     }
+
     padding-top: 189px;
   }
 
@@ -304,6 +306,7 @@
     @media (resolution >= 2dppx) {
       background-image: url("../../img/tablet/news/career-background-2x.webp");
     }
+
     padding-top: 169px;
   }
 
@@ -341,7 +344,7 @@
   }
 
   .news__item-text-angle {
-    right: 106px;
+    right: 69px;
     bottom: 0;
   }
 
@@ -404,12 +407,9 @@
     top: 247px;
   }
 
-  .news__item-text-angle {
-    right: 69px;
-  }
-
   .news__pagination {
     margin-left: 51px;
+    margin-bottom: 106px;
   }
 
   .news__pagination-item {

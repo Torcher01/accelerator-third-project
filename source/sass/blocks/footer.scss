@@ -77,3 +77,77 @@
 .footer__social-link-icon {
   fill: #ffffff;
 }
+
+@media (min-width: $tablet-width) {
+  .footer {
+    position: relative;
+    padding-bottom: 40px;
+  }
+
+  .footer__flex-wrapper {
+    display: flex;
+  }
+
+  .footer__logo {
+    margin-left: 45px;
+    margin-right: 98px;
+  }
+
+  .footer__links {
+    display: flex;
+    margin-top: 17px;
+    margin-left: 0;
+  }
+
+  .footer__link {
+    font-size: 16px;
+    margin-bottom: 0;
+    margin-right: 15px;
+  }
+
+  .footer__link--reviews {
+    margin-left: 16px;
+  }
+
+  .footer__link--contacts {
+    margin-left: 1px;
+  }
+
+  .footer__privacy-policy {
+    margin-left: 45px;
+    margin-top: 6px;
+    padding-bottom: 0;
+    margin-bottom: 6px;
+  }
+
+  .footer__copyright {
+    margin-left: 45px;
+  }
+
+  .footer__social-links {
+    position: absolute;
+    margin: 0;
+    right: 294px;
+    bottom: 57px;
+  }
+
+  .footer__social-link {
+    width: 36px;
+    height: 36px;
+  }
+
+  .footer__social-link-icon--vk {
+    width: 16px;
+    height: 10px;
+  }
+
+  .footer__social-link-icon--ok {
+    width: 10px;
+    height: 16px;
+  }
+
+  .footer__social-link-icon--reddit {
+    width: 16px;
+    height: 16px;
+  }
+}

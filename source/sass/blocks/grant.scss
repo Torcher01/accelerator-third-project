@@ -15,10 +15,10 @@
   line-height: 20px;
   color: #ffffff;
   margin: 0 0 30px 15px;
+}
 
-  & br {
-    display: none;
-  }
+.grant__left-side-desktop p br {
+  display: none;
 }
 
 .grant__img {
@@ -93,15 +93,13 @@
     margin-left: 45px;
     margin-bottom: 40px;
     width: 500px;
+  }
 
-    & br {
-      display: inline;
-    }
+  .grant__left-side-desktop p br {
+    display: inline;
   }
 
   .grant__img {
-    width: 678px;
-    height: 375px;
     margin-left: 45px;
     margin-bottom: 49px;
   }

@@ -81,3 +81,73 @@
 .faq__questions-item--active p {
   display: inline-block;
 }
+
+@media (min-width: $tablet-width) {
+  .faq__header {
+    font-size: 34px;
+    margin-bottom: 45px;
+    margin-left: 239px;
+  }
+
+  .faq__questions {
+    margin-left: 45px;
+    margin-bottom: 106px;
+  }
+
+  .faq__questions-item {
+    width: 674px;
+    padding: 30px 0;
+    border-radius: 16px;
+  }
+
+  .faq__questions-item p {
+    font-size: 16px;
+    width: 590px;
+    margin-left: 30px;
+  }
+
+  .faq__questions-item p br {
+    display: none;
+  }
+
+  .faq__questions-item p br:first-child {
+    display: inline;
+  }
+
+  .faq__questions-item-header {
+    font-size: 22px;
+    line-height: 26px;
+    width: 574px;
+    margin-left: 30px;
+    margin-top: 7px;
+    margin-right: 0;
+  }
+
+  .faq__questions-item-header br {
+    display: none;
+  }
+
+  .faq__questions-item-header--learning {
+    margin-top: 0;
+  }
+
+  .faq__questions-item-header--registration {
+    margin-top: 0;
+  }
+
+  .faq__questions-item-header--learning br:nth-child(2) {
+    display: inline;
+  }
+
+  .faq__questions-item-header--registration br {
+    display: inline;
+  }
+
+  .faq__questions-item-expand {
+    margin-top: 0;
+  }
+
+  .faq__questions-item-expand-icon {
+    margin-top: 4px;
+  }
+}

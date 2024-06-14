@@ -19,7 +19,7 @@
       <div class="hero__background-wrapper">
         <div class="hero__header">
           <img class="hero__header-logo" src="/__spritemap#sprite-header-logo-view" alt="Логотип" width="52"
-            height="52">
+              height="52">
           <button class="hero__header-burger-menu" type="button">
             <span class="hero__header-burger-menu-text">Меню</span>
             <svg class="hero__header-burger-menu-icon" width="46" height="46">
@@ -27,7 +27,7 @@
             </svg>
           </button>
         </div>
-        <nav class="hero__pagination" aria-label="Выбор слайдов">
+        <nav class="hero__pagination" aria-label="Навигация по слайдам в шапке">
           <ul class="hero__pagination-list">
             <li class="hero__pagination-item hero__pagination-item--active"></li>
             <li class="hero__pagination-item"></li>
@@ -170,7 +170,7 @@
           </div>
         </div>
       </div>
-      <nav class="programs__pagination">
+      <nav class="programs__pagination" aria-label="Навигация по слайдам в блоке Программы">
         <ul class="programs__pagination-list">
           <li class="programs__pagination-item programs__pagination-item--active"></li>
           <li class="programs__pagination-item programs__pagination-item--disabled"></li>
@@ -186,9 +186,10 @@
         <p>Свяжитесь с координатором, чтобы узнать полную информацию. Вы получите актуальные
           сведения о доступных программах <br>и городах, в которых можете пройти программу.</p>
         <picture>
-          <source media="(min-width: 768px)" srcset="img/tablet/grant-img-1x.webp, img/tablet/grant-img-2x.webp 2x">
+          <source media="(min-width: 768px)" width="678"
+                  height="375" srcset="img/tablet/grant-img-1x.webp, img/tablet/grant-img-2x.webp 2x" type="image/webp">
           <img class="grant__img" src="img/mobile/grant-img-1x.webp" width="290" height="200"
-            srcset="img/mobile/grant-img-2x.webp 2x" alt="Фотография с указателями в разные города мира">
+              srcset="img/mobile/grant-img-2x.webp 2x" alt="Фотография с указателями в разные города мира">
         </picture>
       </div>
       <div class="grant__right-side-desktop">
@@ -253,7 +254,7 @@
             <use href="/__spritemap#sprite-right-bottom-angle"></use>
           </svg>
           <svg class="news__item-date-angle news__item-date-angle--after news__item-date-angle--after-travel" width="16"
-            height="16">
+              height="16">
             <use href="/__spritemap#sprite-right-bottom-angle"></use>
           </svg>
           <span class="news__item-date news__item-date--travel">20/03/2023</span>
@@ -275,7 +276,8 @@
           <svg class="news__item-date-angle news__item-date-angle--volunteering" width="16" height="16">
             <use href="/__spritemap#sprite-right-bottom-angle"></use>
           </svg>
-          <svg class="news__item-date-angle news__item-date-angle--after news__item-date-angle--after-volunteering" width="16" height="16">
+          <svg class="news__item-date-angle news__item-date-angle--after news__item-date-angle--after-volunteering"
+              width="16" height="16">
             <use href="/__spritemap#sprite-right-bottom-angle"></use>
           </svg>
           <div class="news__item-date">17/03/2023</div>
@@ -299,7 +301,7 @@
             <use href="/__spritemap#sprite-right-bottom-angle"></use>
           </svg>
           <svg class="news__item-date-angle news__item-date-angle--after news__item-date-angle--after-career" width="16"
-               height="16">
+              height="16">
             <use href="/__spritemap#sprite-right-bottom-angle"></use>
           </svg>
           <span class="news__item-date">10/03/2023</span>
@@ -393,7 +395,8 @@
         </div>
         <div class="faq__questions-item faq__questions-item--continue-learning">
           <div class="faq__questions-item-flex-wrapper">
-            <h3 class="faq__questions-item-header">Признаётся ли учёба <br>в рамках проекта для дальнейшего обучения?
+            <h3 class="faq__questions-item-header faq__questions-item-header--learning">Признаётся ли учёба <br>в рамках
+              проекта <br>для дальнейшего обучения?
             </h3>
             <button class="faq__questions-item-expand faq__questions-item-expand--continue-learning" type="button">
               <span class="visually-hidden">Раскрыть или закрыть категорию</span>
@@ -409,7 +412,8 @@
         </div>
         <div class="faq__questions-item faq__questions-item--registration">
           <div class="faq__questions-item-flex-wrapper">
-            <h3 class="faq__questions-item-header">Как выглядит полный процесс регистрации <br>на программу
+            <h3 class="faq__questions-item-header faq__questions-item-header--registration">Как выглядит полный процесс
+              регистрации <br>на программу
               «Стажировка»?</h3>
             <button class="faq__questions-item-expand faq__questions-item-expand--registration" type="button">
               <span class="visually-hidden">Раскрыть или закрыть категорию</span>
@@ -427,7 +431,7 @@
     </div>
   </section>
   <section class="reviews" data-test="reviews">
-    <div class="container">
+    <div class="container container--overflow">
       <div class="reviews__flex-wrapper">
         <h2 class="reviews__header">Отзывы</h2>
         <div class="reviews__slider-buttons">
@@ -447,31 +451,70 @@
         </div>
       </div>
       <div class="reviews__slide-list">
-        <div class="reviews__slide">
+        <div class="reviews__slide reviews__slide--lola-alex">
           <div class="reviews__slide-flex-wrapper">
-            <picture>
-              <img class="reviews__slide-avatar" src="img/mobile/reviews-slider/lola-alex-1x.webp" alt="Аватар"
-                width="60" height="60" srcset="img/mobile/reviews-slider/lola-alex-2x.webp 2x">
-            </picture>
-            <span class="reviews__slide-name">Лола <br>Алекс</span>
-          </div>
-          <div class="reviews__slide-data">
-            <div class="reviews__slide-data-wrapper">
-              <span class="reviews__slide-data-title">Программа</span>
-              <span class="reviews__slide-data-text">Masa Art Challenge</span>
+            <div class="reviews__slide-avatar-name">
+              <picture>
+                <source media="(min-width: 768px)" width="90" height="90" type="image/webp"
+                        srcset="img/tablet/reviews-slider/lola-alex-1x.webp, img/tablet/reviews-slider/lola-alex-2x.webp 2x">
+                <img class="reviews__slide-avatar" src="img/mobile/reviews-slider/lola-alex-1x.webp" alt="Аватар"
+                    width="60" height="60" srcset="img/mobile/reviews-slider/lola-alex-2x.webp 2x">
+              </picture>
+              <span class="reviews__slide-name">Лола <br>Алекс</span>
             </div>
-            <div class="reviews__slide-data-wrapper">
-              <span class="reviews__slide-data-title">Дата</span>
-              <span class="reviews__slide-data-text">Осень 2022</span>
+            <div class="reviews__slide-data">
+              <div class="reviews__slide-data-wrapper">
+                <span class="reviews__slide-data-title">Программа</span>
+                <span class="reviews__slide-data-text">Masa Art Challenge</span>
+              </div>
+              <div class="reviews__slide-data-wrapper">
+                <span class="reviews__slide-data-title">Дата</span>
+                <span class="reviews__slide-data-text">Осень 2022</span>
+              </div>
             </div>
           </div>
           <h3 class="reviews__slide-header">Я могу с уверенностью сказать, что это был один из самых незабываемых опытов
             в жизни!</h3>
           <p>Я рекомендую программу «Стажировка» всем студентам, желающим получить незабываемые впечатления. Сочетание
-            путешествий, общения и значимой работы действительно отличает <br>её от других программ, и я чувствую
+            путешествий, общения и значимой работы действительно отличает <br>её от других программ, <br>и я чувствую
             огромную благодарность <br>за предоставленную <br>мне возможность.</p>
         </div>
+        <div class="reviews__slide reviews__slide--david-ivanov">
+          <div class="reviews__slide-flex-wrapper">
+            <div class="reviews__slide-avatar-name">
+              <picture>
+                <source media="(min-width: 768px)" width="90" height="90" type="image/webp"
+                        srcset="img/tablet/reviews-slider/david-ivanov-1x.webp, img/tablet/reviews-slider/david-ivanov-2x.webp 2x">
+                <img class="reviews__slide-avatar" src="img/mobile/reviews-slider/lola-alex-1x.webp" alt="Аватар"
+                    width="60" height="60" srcset="img/mobile/reviews-slider/lola-alex-2x.webp 2x">
+              </picture>
+              <span class="reviews__slide-name">Давид <br>Иванов</span>
+            </div>
+            <div class="reviews__slide-data">
+              <div class="reviews__slide-data-wrapper">
+                <span class="reviews__slide-data-title">Программа</span>
+                <span class="reviews__slide-data-text">Volunteer Chance</span>
+              </div>
+              <div class="reviews__slide-data-wrapper">
+                <span class="reviews__slide-data-title">Дата</span>
+                <span class="reviews__slide-data-text">Лето 2022</span>
+              </div>
+            </div>
+          </div>
+          <h3 class="reviews__slide-header">Благодаря опыту стажировки я узнал так много нового о себе и об окружающем
+            мире.</h3>
+          <p>Каждый день был возможностью оказать ощутимое влияние на жизнь других людей. Я бы очень рекомендовал
+            эту волонтёрскую программу всем, кто ищет значимый <br>и незабываемый опыт. Организация была на высшем
+            уровне.
+            Для меня было честью быть частью такой удивительной инициативы.</p>
+        </div>
       </div>
+      <nav class="reviews__pagination" aria-label="Навигация по слайдам в блоке с отзывами">
+        <ul class="reviews__pagination-list">
+          <li class="reviews__pagination-item reviews__pagination-item--active"></li>
+          <li class="reviews__pagination-item reviews__pagination-item--disabled"></li>
+        </ul>
+      </nav>
     </div>
   </section>
   <section class="contacts" data-test="contacts">
@@ -495,8 +538,10 @@
       </div>
       <div class="contacts__map-wrapper">
         <picture>
+          <source media="(min-width: 768px)" width="678" height="500" type="image/webp"
+                  srcset="img/tablet/map-1x.webp, img/tablet/map-2x.webp 2x">
           <img class="contacts__map" src="img/mobile/map-1x.webp" alt="Карта" width="290" height="240"
-            srcset="img/mobile/map-2x.webp 2x">
+              srcset="img/mobile/map-2x.webp 2x">
         </picture>
       </div>
     </div>
@@ -558,19 +603,19 @@
     <div class="footer__social-links">
       <a class="footer__social-link" href="#" target="_blank" rel="noopener noreferrer">
         <span class="visually-hidden">ВКонтакте</span>
-        <svg class="footer__social-link-icon" width="12" height="6">
+        <svg class="footer__social-link-icon footer__social-link-icon--vk" width="12" height="6">
           <use href="/__spritemap#sprite-vk"></use>
         </svg>
       </a>
       <a class="footer__social-link" href="#" target="_blank" rel="noopener noreferrer">
         <span class="visually-hidden">Одноклассники</span>
-        <svg class="footer__social-link-icon" width="7" height="12">
+        <svg class="footer__social-link-icon footer__social-link-icon--ok" width="7" height="12">
           <use href="/__spritemap#sprite-ok"></use>
         </svg>
       </a>
       <a class="footer__social-link" href="#" target="_blank" rel="noopener noreferrer">
         <span class="visually-hidden">Реддит</span>
-        <svg class="footer__social-link-icon" width="11" height="11">
+        <svg class="footer__social-link-icon footer__social-link-icon--reddit" width="11" height="11">
           <use href="/__spritemap#sprite-reddit"></use>
         </svg>
       </a>
