@@ -119,6 +119,10 @@
   width: 200px;
 }
 
+.news__item-header br {
+  display: none;
+}
+
 .news__item-header-angle {
   position: absolute;
   right: 89px;
@@ -148,6 +152,14 @@
 
 .news__item-flex-wrapper--travel p {
   padding-top: 14px;
+}
+
+.news__item-flex-wrapper p br {
+  display: none;
+}
+
+.news__item-flex-wrapper p br:nth-child(2) {
+  display: inline;
 }
 
 .news__item-flex-wrapper p span {
@@ -318,6 +330,10 @@
     padding-bottom: 5px;
   }
 
+  .news__item-header br {
+    display: inline;
+  }
+
   .news__item-icon {
     right: 103px;
     top: 37px;
@@ -346,6 +362,10 @@
   .news__item-text-angle {
     right: 69px;
     bottom: 0;
+  }
+
+  .news__item-flex-wrapper p br {
+    display: inline;
   }
 
   .news__item-flex-wrapper p br {

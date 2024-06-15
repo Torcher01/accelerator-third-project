@@ -98,6 +98,10 @@
   border-radius: 0 0 14px;
 }
 
+.hero__slider-item p br {
+  display: none;
+}
+
 .hero__slider-angle {
   position: absolute;
   right: 28px;
@@ -213,6 +217,10 @@
     padding-left: 40px;
     padding-bottom: 35px;
     border-radius: 0 0 0 30px;
+  }
+
+  .hero__slider-item p br {
+    display: inline;
   }
 
   .hero__slider-angle {

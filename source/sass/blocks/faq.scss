@@ -47,6 +47,22 @@
   width: 200px;
 }
 
+.faq__questions-item-header br {
+  display: none;
+}
+
+.faq__questions-item-header--learning br:first-child {
+  display: inline;
+}
+
+.faq__questions-item-header--registration br {
+  display: inline;
+}
+
+.faq__questions-item-header--grant br {
+  display: inline;
+}
+
 .faq__questions-item-expand {
   background-color: #316dc2;
   border: none;
@@ -127,7 +143,11 @@
     display: none;
   }
 
-  .faq__questions-item-header--learning {
+  .faq__questions-item-header--learning br:first-child {
+    display: none;
+  }
+
+    .faq__questions-item-header--learning {
     margin-top: 0;
   }
 
@@ -180,6 +200,7 @@
   .faq__questions-item-header--learning {
     margin-top: -3px;
   }
+
 
   .faq__questions-item-header--registration {
     margin-top: -3px;

@@ -43,6 +43,7 @@
 
 .programs__slides {
   display: flex;
+  margin-bottom: 94px;
 }
 
 .programs__slide {
@@ -68,6 +69,10 @@
   @media (resolution >= 2dppx) {
     background-image: url("../../img/mobile/programs-slide-volunteering-background-2x.webp");
   }
+}
+
+.programs__slide--learning {
+  display: none;
 }
 
 .programs__slide-header {
@@ -111,6 +116,9 @@
 }
 
 .programs__more-info-link {
+  position: absolute;
+  left: 0;
+  top: 486px;
   width: 203px;
   height: 42px;
   margin-bottom: 50px;
@@ -140,6 +148,7 @@
   .programs__header-flex-wrapper {
     margin-left: 45px;
     margin-bottom: 48px;
+    margin-top: 10px;
   }
 
   .programs__slider-buttons {
@@ -149,9 +158,9 @@
   }
 
   .programs__more-info-link {
-    position: absolute;
     top: -9px;
     right: 45px;
+    left: auto;
     width: 232px;
     height: 54px;
   }
@@ -161,12 +170,14 @@
   }
 
   .programs__slides {
+    margin-left: 45px;
     margin-bottom: 50px;
   }
 
   .programs__slide {
-    margin-left: 45px;
-    margin-right: -15px;
+    margin-left: 0;
+    margin-right: 30px;
+    padding-right: 20px;
     width: 324px;
     padding-top: 285px;
   }
@@ -185,6 +196,15 @@
 
     @media (resolution >= 2dppx) {
       background-image: url("../../img/tablet/programs-slide-volunteering-background-2x.webp");
+    }
+  }
+
+  .programs__slide--learning {
+    display: block;
+    background-image: url("../../img/tablet/programs-slide-learning-background-1x.webp");
+
+    @media (resolution >= 2dppx) {
+      background-image: url("../../img/tablet/programs-slide-learning-background-2x.webp");
     }
   }
 
@@ -245,12 +265,17 @@
     width: 236px;
     opacity: 0.2;
   }
+
+  .programs__pagination-item--desktop {
+    display: none;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .programs__header-flex-wrapper {
     margin-left: 100px;
     margin-bottom: 41px;
+    margin-top: 8px;
   }
 
   .programs__header {
@@ -273,7 +298,7 @@
   }
 
   .programs__slide {
-    margin: 0 32px 0 0;
+    margin: 0 12px 0 0;
     width: 392px;
     padding-top: 280px;
     padding-bottom: 10px;
@@ -297,6 +322,7 @@
   }
 
   .programs__slide--learning {
+    display: block;
     background-image: url("../../img/desktop/programs-slide-learning-background-1x.webp");
 
     @media (resolution >= 2dppx) {
@@ -356,6 +382,10 @@
 
   .programs__pagination-item--disabled {
     width: 371px;
+  }
+
+  .programs__pagination-item--desktop {
+    display: block;
   }
 
   .programs__slider-buttons {

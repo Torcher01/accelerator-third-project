@@ -35,7 +35,7 @@
 .about__more-info-link-text {
   margin-left: 20px;
   margin-top: 2px;
-  margin-right: 19px;
+  margin-right: 21px;
 }
 
 .about__advantages {
@@ -67,7 +67,7 @@
   letter-spacing: 0.16px;
   text-transform: uppercase;
   color: #ffffff;
-  margin: 16px 0 16px 19px;
+  margin: 16px 0 16px 20px;
 }
 
 .about__advantages-item p {
@@ -91,6 +91,14 @@
 
 .about__advantages-item--money p {
   width: 280px;
+}
+
+.about__advantages-item--money p br {
+  display: inline;
+}
+
+.about__advantages-item--money p br:nth-child(2) {
+  display: none;
 }
 
 .about__advantages-item--members-country h3 {
@@ -162,7 +170,7 @@
     padding-top: 72px;
     padding-left: 70px;
     padding-bottom: 49px;
-    margin-bottom: 109px;
+    margin-bottom: 100px;
   }
 
   .about__advantages-item {
@@ -195,6 +203,10 @@
 
   .about__advantages-item p br {
     display: inline;
+  }
+
+  .about__advantages-item--members-country p br {
+    display: none;
   }
 }
 
@@ -234,6 +246,7 @@
   .about__advantages {
     margin-left: 100px;
     padding-left: 120px;
+    padding-bottom: 50px;
     width: 1120px;
     grid-template-columns: 490px 490px;
     gap: 54px 46px;
