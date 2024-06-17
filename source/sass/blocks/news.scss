@@ -381,9 +381,7 @@
 
   .news__item-flex-wrapper p br {
     display: inline;
-  }
 
-  .news__item-flex-wrapper p br {
     &:nth-child(2) {
       display: none;
     }

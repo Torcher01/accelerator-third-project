@@ -21,7 +21,7 @@ const burgerMenuOpen = () => {
 
   burgerMenuButton.addEventListener('click', burgerMenuClose);
   burgerMenuButton.removeEventListener('click', burgerMenuOpen);
-}
+};
 
 const burgerMenuClose = () => {
   burgerMenuButton.classList.remove('hero__header-burger-menu--opened');
@@ -33,25 +33,26 @@ const burgerMenuClose = () => {
   burgerMenuIconClose.classList.add('hero__header-burger-menu-icon--hidden');
   burgerMenuButton.addEventListener('click', burgerMenuOpen);
   burgerMenuButton.removeEventListener('click', burgerMenuClose);
-}
+};
 
 burgerMenuButton.addEventListener('click', burgerMenuOpen);
+
 document.body.addEventListener('click', (evt) => {
   const target = evt.target;
   if (!target.closest('.hero__header-burger-menu')
     && !target.closest('.hero__header-menu')
   ) {
-    burgerMenuClose()
+    burgerMenuClose();
   }
-})
+});
 
 menuItems.forEach((item, i) => {
-  item.addEventListener('click', (evt) => {
+  item.addEventListener('click', () => {
     menuInnerLists[i].classList.toggle('hero__header-menu-list--hidden');
-    menuInnerListsArrows[i].classList.toggle('hero__header-menu-list-inner-arrow--opened')
-  })
-})
+    menuInnerListsArrows[i].classList.toggle('hero__header-menu-list-inner-arrow--opened');
+  });
+});
 
 menuItemLinks.forEach((link) => {
   link.addEventListener('click', burgerMenuClose);
-})
+});
