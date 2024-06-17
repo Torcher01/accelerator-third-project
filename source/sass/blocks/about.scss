@@ -30,8 +30,8 @@
   align-items: center;
   border: 1px solid #316dc2;
   border-radius: 30px;
-  width: 221px;
-  height: 42px;
+  width: 223px;
+  height: 44px;
   margin-left: 15px;
   margin-bottom: 40px;
   padding: 0;
@@ -47,6 +47,19 @@
   margin-left: 20px;
   margin-top: 2px;
   margin-right: 21px;
+}
+
+.about__more-info-button-icon-wrapper {
+  display: flex;
+  width: 34px;
+  height: 34px;
+  background-color: #316dc2;
+  border-radius: 50%;
+}
+
+.about__more-info-button-icon {
+  margin-left: 12px;
+  margin-top: 13px;
 }
 
 .about__advantages {
@@ -174,9 +187,16 @@
     margin-right: 30px;
   }
 
-  .about__more-info-button-icon {
+  .about__more-info-button-icon-wrapper {
     width: 46px;
     height: 46px;
+  }
+
+  .about__more-info-button-icon {
+    width: 8px;
+    height: 8px;
+    margin-left: 19px;
+    margin-top: 19px;
   }
 
   .about__advantages {

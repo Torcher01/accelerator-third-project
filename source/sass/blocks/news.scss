@@ -96,7 +96,7 @@
 }
 
 .news__item-date-angle--after {
-  left: 78px;
+  left: 77px;
   top: 200px;
   fill: #f0efe9;
 }
@@ -167,14 +167,26 @@
   width: 190px;
 }
 
-.news__item-icon {
+.news__item-icon-wrapper {
   position: absolute;
   right: 52px;
+  width: 30px;
+  height: 30px;
+  background-color: #316dc2;
+  border-radius: 50%;
+}
+
+.news__item-icon-wrapper--interview {
   top: 18px;
 }
 
-.news__item-icon--travel {
+.news__item-icon-wrapper--travel {
   top: 12px;
+}
+
+.news__item-icon {
+  margin-left: 11px;
+  margin-top: 11px;
 }
 
 .news__item-text-angle {
@@ -334,29 +346,32 @@
     display: inline;
   }
 
-  .news__item-icon {
-    right: 103px;
-    top: 37px;
-  }
-
-  .news__item-icon--travel {
-    top: 17px;
-  }
-
-  .news__item-icon--volunteering {
-    top: 17px;
-  }
-
-  .news__item-icon--career {
-    top: 27px;
-  }
-
   .news__item-flex-wrapper p {
     font-size: 14px;
     line-height: 20px;
     padding-top: 12px;
     padding-bottom: 15px;
     width: 240px;
+  }
+
+  .news__item-icon-wrapper {
+    right: 103px;
+  }
+
+  .news__item-icon-wrapper--interview {
+    top: 37px;
+  }
+
+  .news__item-icon-wrapper--travel {
+    top: 17px;
+  }
+
+  .news__item-icon-wrapper--volunteering {
+    top: 17px;
+  }
+
+  .news__item-icon-wrapper--career {
+    top: 27px;
   }
 
   .news__item-text-angle {
@@ -585,21 +600,6 @@
     display: none;
   }
 
-  .news__item-icon {
-    right: 154px;
-    top: 15px;
-  }
-
-  .news__item-icon--travel {
-    right: 64px;
-    top: 15px;
-  }
-
-  .news__item-icon--volunteering {
-    right: 60px;
-    top: 15px;
-  }
-
   .news__item-date-angle {
     top: 215px;
   }
@@ -651,6 +651,21 @@
 
   .news__item-text-angle--volunteering {
     right: 26px;
+  }
+
+  .news__item-icon-wrapper--interview {
+    right: 154px;
+    top: 15px;
+  }
+
+  .news__item-icon-wrapper--travel {
+    top: 15px;
+    right: 64px;
+  }
+
+  .news__item-icon-wrapper--volunteering {
+    top: 15px;
+    right: 60px;
   }
 
   .news__pagination {

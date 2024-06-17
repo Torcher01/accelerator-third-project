@@ -270,6 +270,18 @@
   margin-left: 1px;
 }
 
+.hero__slider-more-link-icon-wrapper {
+  width: 34px;
+  height: 34px;
+  background-color: #316dc2;
+  border-radius: 50%;
+}
+
+.hero__slider-more-link-icon {
+  margin-top: 13px;
+  margin-left: 14px;
+}
+
 .hero__slider-more-link-text {
   margin-left: 20px;
   margin-top: 1px;
@@ -395,6 +407,16 @@
   .hero__slider-more-link-text {
     margin-left: 30px;
     margin-right: 30px;
+  }
+
+  .hero__slider-more-link-icon-wrapper {
+    width: 46px;
+    height: 46px;
+  }
+
+  .hero__slider-more-link-icon {
+    margin-top: 19px;
+    margin-left: 20px;
   }
 }
 

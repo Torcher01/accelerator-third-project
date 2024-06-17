@@ -138,7 +138,18 @@
   color: #ffffff;
   margin-left: 74px;
   margin-top: 1px;
-  margin-right: 74px;
+  margin-right: 75px;
+}
+
+.form__submit-button-icon-wrapper {
+  width: 34px;
+  height: 34px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.form__submit-button-icon {
+  margin-top: 13px;
 }
 
 @media (min-width: $tablet-width) {
@@ -213,9 +224,14 @@
     margin-top: 0;
   }
 
-  .form__submit-button-icon {
+  .form__submit-button-icon-wrapper {
     width: 46px;
     height: 46px;
+  }
+
+  .form__submit-button-icon {
+    margin-top: 19px;
+    margin-left: 1px;
   }
 }
 
@@ -268,5 +284,9 @@
 
   .form__submit-button {
     width: 350px;
+  }
+
+  .form__submit-button-icon {
+    margin-left: -2px;
   }
 }
