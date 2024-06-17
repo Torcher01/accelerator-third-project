@@ -41,9 +41,19 @@
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 8px;
   background: transparent;
-  width: 264px;
+  width: 241px;
   height: 46px;
   margin-bottom: 21px;
+  padding-left: 25px;
+  caret-color: #fff;
+
+  &:hover {
+    border-color: #fff;
+  }
+
+  &:disabled {
+    background-color: rgba(255, 255, 255, 0.2)
+  }
 }
 
 .form__textarea {
@@ -51,9 +61,16 @@
   border-radius: 8px;
   background: transparent;
   resize: none;
-  width: 264px;
-  height: 88px;
-  margin-bottom: 18px;
+  width: 241px;
+  height: 75px;
+  margin-bottom: 17px;
+  padding-left: 25px;
+  padding-top: 16px;
+  caret-color: #fff;
+
+  &:hover {
+    border-color: #fff;
+  }
 }
 
 .form__select {
@@ -74,6 +91,10 @@
   height: 52px;
   cursor: pointer;
   margin-bottom: 21px;
+
+  &:hover {
+    border-color: #fff;
+  }
 }
 
 .form__checkbox-label {
@@ -90,18 +111,29 @@
   &::before {
     content: "";
     display: inline-block;
-    width: 20px;
-    height: 20px;
+    width: 19px;
+    height: 19px;
     flex-shrink: 0;
     flex-grow: 0;
+    border: 1px solid rgba(255, 255, 255, 0.7);
     border-radius: 2px;
-    background-color: #ffffff;
+    background-color: transparent;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 50% 50%;
     margin-left: -15px;
-    margin-right: 10px;
+    margin-right: 9px;
     margin-top: -2px;
+  }
+
+  &:hover:before,
+  &:focus:before,
+  &:disabled:before {
+    border-color: #fff;
+  }
+
+  &:disabled:before {
+    background-color: rgba(255, 255, 255, 0.6);
   }
 }
 
@@ -111,11 +143,26 @@
   opacity: 0;
 
   &:checked + .form__checkbox-label::before {
+    background-color: #fff;
     background-image: url("../../img/mobile/checkbox-checked-1x.webp");
 
     @media (resolution >= 2dppx) {
       background-image: url("../../img/mobile/checkbox-checked-2x.webp");
     }
+  }
+
+  &:checked:hover + .form__checkbox-label::before {
+    background-color: #316dc2;
+    background-image: url("../../img/mobile/checkbox-checked-white-1x.webp");
+
+    @media (resolution >= 2dppx) {
+      background-image: url("../../img/mobile/checkbox-checked-white-2x.webp");
+    }
+  }
+
+  &:checked:disabled + .form__checkbox-label::before {
+    border-color: #a9afb7;
+    background-color: #a9afb7;
   }
 }
 
@@ -128,6 +175,49 @@
   padding: 0;
   width: 260px;
   height: 44px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #fff;
+  }
+
+  &:hover .form__submit-button-text {
+    color: #316dc2;
+  }
+
+  &:hover .form__submit-button-icon-wrapper {
+    background-color: #316dc2;
+  }
+
+  &:hover .form__submit-button-icon {
+    transform: rotate(45deg);
+    stroke: #fff;
+  }
+
+  &:active .form__submit-button-text,
+  &:active .form__submit-button-icon {
+    opacity: 0.7;
+  }
+
+  &:focus .form__submit-button-icon {
+    transform: rotate(45deg);
+  }
+
+  &:disabled {
+    border-color: #a9afb7;
+  }
+
+  &:disabled .form__submit-button-text {
+    color: #a9afb7;
+  }
+
+  &:disabled .form__submit-button-icon-wrapper {
+    background-color: #a9afb7;
+  }
+
+  &:disabled .form__submit-button-icon {
+    stroke: rgba(255, 255, 255, 0.6);
+  }
 }
 
 .form__submit-button-text {
@@ -137,8 +227,8 @@
   text-transform: uppercase;
   color: #ffffff;
   margin-left: 74px;
-  margin-top: 1px;
-  margin-right: 75px;
+  margin-top: 2px;
+  margin-right: 74px;
 }
 
 .form__submit-button-icon-wrapper {
@@ -151,6 +241,7 @@
 
 .form__submit-button-icon {
   margin-top: 13px;
+  stroke: #316dc2;
 }
 
 @media (min-width: $tablet-width) {
@@ -188,20 +279,19 @@
   }
 
   .form__input {
-    width: 356px;
+    width: 333px;
     margin-bottom: 22px;
   }
 
   .form__textarea {
-    width: 356px;
-    height: 82px;
+    width: 333px;
+    height: 68px;
     margin-bottom: 19px;
   }
 
   .form__select {
     width: 362px;
     background-position-x: 324px;
-    margin-bottom: 22px;
   }
 
   .form__checkbox-label {
@@ -221,7 +311,7 @@
     font-size: 14px;
     letter-spacing: 0.28px;
     margin-left: 108px;
-    margin-right: 108px;
+    margin-right: 109px;
     margin-top: 0;
   }
 
@@ -269,12 +359,12 @@
   }
 
   .form__input {
-    width: 344px;
+    width: 321px;
   }
 
   .form__textarea {
-    width: 344px;
-    height: 84px;
+    width: 321px;
+    height: 70px;
     margin-bottom: 15px;
   }
 
@@ -285,6 +375,10 @@
 
   .form__submit-button {
     width: 350px;
+  }
+
+  .form__submit-button-text {
+    margin-right: 107px;
   }
 
   .form__submit-button-icon {

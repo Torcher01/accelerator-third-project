@@ -36,6 +36,49 @@
   margin-bottom: 40px;
   padding: 0;
   cursor: pointer;
+
+  &:hover {
+    background-color: #316dc2;
+  }
+
+  &:hover .about__more-info-button-text {
+    color: #fff;
+  }
+
+  &:hover .about__more-info-button-icon-wrapper {
+    background-color: #fff;
+  }
+
+  &:hover .about__more-info-button-icon {
+    stroke: #316dc2;
+    transform: rotate(45deg);
+  }
+
+  &:focus .about__more-info-button-icon {
+    transform: rotate(45deg);
+  }
+
+  &:active .about__more-info-button-text,
+  &:active .about__more-info-button-icon {
+    opacity: 0.7;
+  }
+
+  &:disabled {
+    background-color: #fff;
+    border-color: #a9afb7;
+  }
+
+  &:disabled .about__more-info-button-text {
+    color: #a9afb7;
+  }
+
+  &:disabled .about__more-info-button-icon-wrapper {
+    background-color: #a9afb7;
+  }
+
+  &:disabled .about__more-info-button-icon {
+    stroke: #a9afb7;
+  }
 }
 
 .about__more-info-button-text {
@@ -60,6 +103,7 @@
 .about__more-info-button-icon {
   margin-left: 12px;
   margin-top: 13px;
+  stroke: #fff;
 }
 
 .about__advantages {
@@ -284,7 +328,7 @@
   .about__advantages {
     margin-left: 100px;
     padding-left: 120px;
-    padding-bottom: 50px;
+    margin-bottom: 61px;
     width: 1120px;
     grid-template-columns: 490px 490px;
     gap: 54px 46px;

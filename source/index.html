@@ -254,11 +254,12 @@
           <div class="programs__slide-text-background-wrapper">
             <div class="programs__slide-flex-wrapper">
               <p>Получите незаменимый опыт работы в крупнейших мировых компаниях.</p>
-              <div class="programs__slide-link-icon-wrapper">
+              <button class="programs__slide-link-more-info" type="button">
+                <span class="visually-hidden">Подробнее</span>
                 <svg class="programs__slide-link-icon" width="8" height="8">
                   <use href="/__spritemap#sprite-more-link-icon"></use>
                 </svg>
-              </div>
+              </button>
             </div>
           </div>
         </div>
@@ -270,11 +271,12 @@
           <div class="programs__slide-text-background-wrapper">
             <div class="programs__slide-flex-wrapper">
               <p>Помогайте другим <br>и развивайте свои <br>лидерские качества</p>
-              <div class="programs__slide-link-icon-wrapper">
+              <button class="programs__slide-link-more-info" type="button">
+                <span class="visually-hidden">Подробнее</span>
                 <svg class="programs__slide-link-icon" width="8" height="8">
                   <use href="/__spritemap#sprite-more-link-icon"></use>
                 </svg>
-              </div>
+              </button>
             </div>
           </div>
         </div>
@@ -286,11 +288,12 @@
           <div class="programs__slide-text-background-wrapper">
             <div class="programs__slide-flex-wrapper">
               <p>Получите образование и измените своё будущее.</p>
-              <div class="programs__slide-link-icon-wrapper">
+              <button class="programs__slide-link-more-info" type="button">
+                <span class="visually-hidden">Подробнее</span>
                 <svg class="programs__slide-link-icon" width="8" height="8">
                   <use href="/__spritemap#sprite-more-link-icon"></use>
                 </svg>
-              </div>
+              </button>
             </div>
           </div>
         </div>
@@ -375,11 +378,12 @@
           <div class="news__item-flex-wrapper">
             <p><span>Саша рассказывает, <br>как попала <br>в программу <br>и как прошла 6-месячная стажировка в ISOFound</span>
             </p>
-            <div class="news__item-icon-wrapper news__item-icon-wrapper--interview">
+            <button class="news__item-icon-wrapper news__item-icon-wrapper--interview" type="button">
+              <span class="visually-hidden">Подробнее</span>
               <svg class="news__item-icon" width="8" height="8">
                 <use href="/__spritemap#sprite-more-link-icon"></use>
               </svg>
-            </div>
+            </button>
             <svg class="news__item-text-angle" width="16" height="16">
               <use href="/__spritemap#sprite-right-bottom-angle"></use>
             </svg>
@@ -400,11 +404,12 @@
           </svg>
           <div class="news__item-flex-wrapper news__item-flex-wrapper--travel">
             <p><span>Какие места посещают наши студенты весной</span></p>
-            <div class="news__item-icon-wrapper news__item-icon-wrapper--travel">
+            <button class="news__item-icon-wrapper news__item-icon-wrapper--travel" type="button">
+              <span class="visually-hidden">Подробнее</span>
               <svg class="news__item-icon" width="8" height="8">
                 <use href="/__spritemap#sprite-more-link-icon"></use>
               </svg>
-            </div>
+            </button>
             <svg class="news__item-text-angle news__item-text-angle--travel" width="16" height="16">
               <use href="/__spritemap#sprite-right-bottom-angle"></use>
             </svg>
@@ -426,11 +431,12 @@
           <div class="news__item-flex-wrapper news__item-flex-wrapper--volunteering">
             <p><span>Программа помощи детям длительностью 4 месяца</span>
             </p>
-            <div class="news__item-icon-wrapper news__item-icon-wrapper--volunteering">
+            <button class="news__item-icon-wrapper news__item-icon-wrapper--volunteering" type="button">
+              <span class="visually-hidden">Подробнее</span>
               <svg class="news__item-icon" width="8" height="8">
                 <use href="/__spritemap#sprite-more-link-icon"></use>
               </svg>
-            </div>
+            </button>
             <svg class="news__item-text-angle news__item-text-angle--volunteering" width="16" height="16">
               <use href="/__spritemap#sprite-right-bottom-angle"></use>
             </svg>
@@ -451,11 +457,12 @@
           </svg>
           <div class="news__item-flex-wrapper">
             <p><span>Ведущие компании <br>готовы трудоустроить выпускников стажировки</span></p>
-            <div class="news__item-icon-wrapper news__item-icon-wrapper--career">
+            <button class="news__item-icon-wrapper news__item-icon-wrapper--career" type="button">
+              <span class="visually-hidden">Подробнее</span>
               <svg class="news__item-icon" width="8" height="8">
                 <use href="/__spritemap#sprite-more-link-icon"></use>
               </svg>
-            </div>
+            </button>
             <svg class="news__item-text-angle news__item-text-angle--career" width="16" height="16">
               <use href="/__spritemap#sprite-right-bottom-angle"></use>
             </svg>
@@ -524,10 +531,13 @@
         <div class="faq__questions-item faq__questions-item--active">
           <div class="faq__questions-item-flex-wrapper">
             <h3 class="faq__questions-item-header">Как определяется стоимость программы?</h3>
-            <button class="faq__questions-item-expand faq__questions-item-expand--cost" type="button">
+            <button class="faq__questions-item-expand faq__questions-item-expand--opened faq__questions-item-expand--cost" type="button">
               <span class="visually-hidden">Раскрыть или закрыть категорию</span>
-              <svg class="faq__questions-item-expand-icon" width="18" height="18">
+              <svg class="faq__questions-item-expand-icon faq__questions-item-expand-icon--hidden" width="18" height="18">
                 <use href="/__spritemap#sprite-plus-icon"></use>
+              </svg>
+              <svg class="faq__questions-item-collapse-icon" width="18" height="18">
+                <use href="/__spritemap#sprite-minus-icon"></use>
               </svg>
             </button>
           </div>
